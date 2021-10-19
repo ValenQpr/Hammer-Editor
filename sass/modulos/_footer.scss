@@ -1,0 +1,19 @@
+@import 'mediaqueries';
+
+/*===================================================== FOOTER =========================================================
+========================================================================================================================*/
+footer {
+    color: white;
+    display: grid;
+    justify-self: center;
+    grid-area: footer;
+    border: 2px solid black;
+    width: 70rem;
+    background: rgb(36, 36, 58);
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 3px;
+    @include tablet{
+        width: 50rem;
+    }
+}

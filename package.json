@@ -1,0 +1,19 @@
+{
+  "name": "sassdesafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass --style=compressed sass:estilos",
+    "watch": "sass --watch --style=compressed sass:estilos"
+  },
+  "author": "valentin",
+  "license": "ISC"
+}
+

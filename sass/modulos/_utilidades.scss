@@ -1,0 +1,11 @@
+$shadows:(
+    "shadow1": inset 0 0 1rem black,
+    "shadow2": inset 0 0 2rem black,
+    "shadow3": inset 0 0 5rem black,
+);
+
+@each $sombras, $valores in $shadows {
+    .#{$sombras}{
+        box-shadow: $valores;
+    }
+}

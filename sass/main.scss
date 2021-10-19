@@ -1,0 +1,40 @@
+@import 'modulos/header';
+@import 'modulos/mainInicio';
+@import 'modulos/section';
+@import 'modulos/aside';
+@import 'modulos/3DSkybox';
+@import 'modulos/skybox';
+@import 'modulos/mediaqueries';
+@import 'modulos/footer';
+@import 'modulos/utilidades';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.table>:not(caption)>*>* {
+    padding: .5rem .5rem;
+    background-color: rgba(0, 0, 0, 0.774);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}

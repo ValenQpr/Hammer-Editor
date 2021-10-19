@@ -1,0 +1,61 @@
+@import 'mediaqueries';
+
+/*============================= ASIDE INDEX =============================*/
+aside {
+    color: white;
+    margin-left: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    background: rgb(36, 36, 58);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+aside h3 {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    border: 2px solid black;
+    margin-right: 5px;
+}
+
+
+aside div {
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid black;
+}
+
+aside img {
+    width: 362px;
+    height: 204px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+aside img:hover {
+    transform: scale(1.10);
+}
+
+/*============================= ASIDE guias =============================*/
+
+.asideGuias div {
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.asideGuias img:hover {
+    transform: scale(1.10);
+}
+
+.asideGuias img {
+    width: 362px;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.3s;
+}

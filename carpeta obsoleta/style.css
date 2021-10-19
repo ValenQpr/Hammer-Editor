@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*======================================================= HEADER =======================================================
+========================================================================================================================*/
+
+h1 {
+    font-family: Trattatello, fantasy;
+    color: white;
+    padding-top: 15px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
+}
+
+h4 {
+    color: white;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
+}
+
+h3 {
+    font-family: Trattatello, fantasy;
+}
+
+.titulo {
+    display: grid;
+    justify-items: center;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    grid-area: header;
+
+}
+
+/*============================= NAV ===========================*/
+
+header ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    border: 2px solid black;
+    width: 70rem;
+    background: rgb(36, 36, 58);
+    border-radius: 3px;
+}
+
+.menu a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.menu a {
+    color: white;
+    display: flex;
+    size: 100%;
+}
+
+
+ul.menu {
+    padding: 0 !important;
+}
+
+nav li:hover a {
+    display: block;
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+
+/*======================================================= MAIN =========================================================
+========================================================================================================================*/
+
+main {
+    grid-area: main;
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 2fr 1fr;
+    width: 70rem;
+}
+
+/*============================= SECTION INDEX ===========================*/
+
+section {
+    background: rgba(255, 255, 255, 0.842);
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+section h3 {
+    font-size: 30px;
+}
+
+section p {
+    font-size: 15px;
+}
+
+/*============================= SECTION GUIAS ===========================*/
+
+hr.hrMapas{
+    border: none;
+    border-top: 3px solid;
+    color: black;
+}
+
+.h3Mapas{
+    display: flex;
+    justify-content: center;
+font-size: 25px;
+}
+
+.sourceLogo img {
+    display: flex;
+    justify-content: center;
+    width: 524px;
+    height: 175px;
+}
+.sourceLogo {
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    display: grid;
+    justify-content: center;
+}
+
+/*============================= SECTION MAPAS ===========================*/
+
+.h2Mapa h3{
+    display: flex;
+    justify-content: center;
+}
+
+/*============================= SECTION SDK ===========================*/
+.h2SDK {
+    display: grid;
+    justify-content: center;
+}
+
+.SDKgif1 {
+    display: grid;
+    justify-content: center;
+
+}
+
+.SDKgif1 img {
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+.SDKimg1 {
+    display: grid;
+    justify-content: center;
+    padding: auto;
+
+}
+
+.SDKimg1 img {
+    border: 2px solid black;
+    width: 349px;
+    height: 454px;
+    object-fit: cover;
+}
+
+.SDKimg2 {
+    display: grid;
+    justify-content: center;
+}
+
+.SDKimg2 img {
+    width: 714px;
+    height: 386px;
+    border: 2px solid black;
+}
+
+
+/*============================= ASIDE INDEX =============================*/
+aside {
+    color: white;
+    margin-left: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    background: rgb(36, 36, 58);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+}
+
+aside h3 {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    border: 2px solid black;
+    margin-right: 5px;
+}
+
+
+aside div {
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid black;
+}
+
+aside img {
+    width: 362px;
+    height: 204px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+aside img:hover {
+    transform: scale(1.10);
+}
+
+/*============================= ASIDE guias =============================*/
+
+.asideGuias div {
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.asideGuias img:hover {
+    transform: scale(1.10);
+}
+
+.asideGuias img{
+    width: 362px;
+    height: 150px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+.table>:not(caption)>*>* {
+    padding: .5rem .5rem;
+    background-color: rgba(0, 0, 0, 0.774);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+}
+
+
+
+
+
+/*===================================================== FOOTER =========================================================
+========================================================================================================================*/
+
+footer {
+    color: white;
+    display: grid;
+    justify-self: center;
+    grid-area: footer;
+    border: 2px solid black;
+    width: 70rem;
+    background: rgb(36, 36, 58);
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr;
+width: 50rem;
+    }
+    header ul{
+        width: 50rem;
+    }
+    .aside{
+        display: none;
+    }
+footer{
+    width: 50rem;
+}
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    .aside{
+        display: none;
+    }
+    
+
+}
+
+@media screen and (max-width: 320px) {
+    main {
+        grid-template-columns: 1fr;
+grid-template-rows: 1fr 1fr;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    .aside{
+        display: none;
+    }
+    
+
+}
+
+

@@ -1,0 +1,22 @@
+Cambios realizados:
+
+*Se agrego SEO a la pagina web
+
+*Se agregaron keywords que permiten que el usuario tenga mas facilidad de buscar la pagina
+
+*Al index se le agrego las siguientes keywords: "hammer, editor, csgo, Counter, Strike, SDK, mapas"
+
+*Se agregaron descripciones que permiten que el usuario tenga mas facilidad de ver de que trata la pagina antes de poder entrar
+
+*Al "index" se le agrego la siguiente descripcion: "Hammer editor en español es una pagina dedicada a explicar de manera detallada el uso del editor del motor grafico source"
+
+*Al "mapas" se le agrego la siguiente descripcion: "Seccion de mapas hechos con el hammer editor"
+
+*Al "guias" se le agrego la siguiente descripcion: "Seccion de todas las guias para usar el hammer editor"
+
+*se agrego tambien titulos y encabezados para diferenciar las paginas
+
+*se cambiaron todos los archivos de imagenes .png a .jpg para optimizar mejor los recursos de la pagina
+
+*Se agrego una pagina de error404
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hammer, editor, csgo, Counter, Strike, SDK, mapas, skybox">
+    <meta name="description" content="Seccion completa del 3Dskybox">
+    <title>Hammer Editor/3DSkybox</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="titulo">
+            <h1>Hammer Editor</h1>
+            <h4>En español</h4>
+        </div>
+        <nav>
+            <div>
+                <ul class="menu">
+                    <li><a href="../index.html">inicio</a></li>
+                    <li><a href="../secciones/guias.html">guias</a></li>
+                    <li><a href="../secciones/mapas.html">mapas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="skyboxsection3D">
+            <h3 class="skyboxsection3D__title">3D Skybox</h3>
+            <p class="skyboxsection3D__info"> Agregar un skybox 3D puede ser una poderosa adición al tratamiento visual de
+                un nivel. El skybox 3D es un área adicional construida por el diseñador de niveles que está fuera de los
+                límites de la parte de juego del mapa. Cuando se carga el mapa, Source agranda los objetos en el área
+                del skybox 3D y los coloca fuera de los límites del nivel actual, entre el skybox y el jugador. Esto se
+                usa para dar la apariencia de un mundo mucho más amplio fuera de su nivel, sin ser demasiado caro para
+                el presupuesto debido a la escala 1:16 (predeterminada). Los skyboxes 3D no son interactivos: el jugador
+                y otras entidades no pueden moverse al espacio del skybox 3D.</p>
+
+            <p class="skyboxsection3D__info">La geometría del skybox 3D puede ser indistinguible de la geometría de nivel
+                normal. Las transiciones fluidas desde la geometría de nivel normal y el skybox 3D son muy posibles, y
+                se utilizan en muchos de los mapas para juegos oficiales de Source, como Counter-Strike: Source. </p>
+            <img class="skyboxsection3D__imagen" src="../img/skycamera.png" alt="skycamera">
+            <h3 class="skyboxsection3D__title skyboxsection3D__title--subtitle"> Los Skyboxes 3D tienen las siguientes características:</h3>
+            
+            <ul>
+               <li> Se construyen (por defecto) en escala 1/16 en el editor de Hammer y luego se renderizan a 16 veces el
+                tamaño en el motor para que coincida con la geometría del mundo.</li>
+                <li> Materiales de soporte con efectos de sombreado como mapeo normal, agua, mapeo del entorno, proxies, etc.
+                No son interactivos: los jugadores y otras entidades del mundo no pueden ingresar a los palcos en 3D. El
+                skybox 3D es solo una extensión visual de la extensión del mapa.</li>
+                <li> Puede construirse con pinceles, desplazamientos, accesorios estáticos y dinámicos, luces, entidades de
+                pincel y entidades puntuales (como env_sprite ).</li>
+                <li>Cualquier modelo que se coloque en el skybox 3D debe ser creado a escala 1/16. Los modelos estándar (
+                accesorios ) no se escalan correctamente para el skybox 3D. Deben utilizarse versiones especiales a
+                escala 1/16. Para Half-Life 2 , estos accesorios se pueden encontrar en el
+                models/props_skyboxdirectorio.</li>
+                <li>No debe contener info_player_start , NPC o monstruos.</li>
+                <li>Tienen un mapa de luz y una resolución de textura más bajos debido a la escala a la que se crean.</li>
+                <li>Debe tener sus propias fuentes de iluminación, aunque también se utilizará un entorno de luz en la
+                sección que no es del skybox para la iluminación del skybox en 3D.</li>
+                <li>Utilice la entidad sky_camera para controlar cómo se alinean con la geometría del mundo que no es
+                skybox.</li>
+                <li> Los skyboxes 3D tienen sus propios parámetros de niebla, ajustables en la entidad sky_camera .</li>
+                <li>La geometría en el skybox 3D no se ocluye ni se elimina como el resto de la geometría del nivel. Agregar
+                muchos modelos o geometría de pincel detallados al skybox 3D, especialmente con materiales translúcidos,
+                puede afectar gravemente al rendimiento.</li>
+                <li>Un mapa debe tener un light_environment, de lo contrario, los modelos en el skybox 3D se iluminarán
+                incorrectamente. Un light_environmenten la parte del mapa que no es skybox niega la necesidad de uno en
+                el skybox 3D.</li>
+            </ul>
+        </section>
+        <aside class="asideGuias">
+            <div>
+                <a class="iluminacion" title="Anubis" href="../tutoriales/iluminacion.html"><img
+                        src="../img/Iluminacion.jpg" alt="" /></a>
+            </div>
+            <div>
+                <a class="imgAnubis" title="Anubis" href="../tutoriales/cubemaps.html"><img src="../img/cubemap.jpg"
+                        alt="" /></a>
+            </div>
+        </aside>
+    </main>
+</body>
+
+</html>

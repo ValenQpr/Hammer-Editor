@@ -1,0 +1,72 @@
+@import 'mediaqueries';
+
+h1 {
+    font-family: Trattatello, fantasy;
+    color: white;
+    padding-top: 15px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
+}
+
+h4 {
+    color: white;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
+}
+
+h3 {
+    font-family: Trattatello, fantasy;
+}
+
+.titulo {
+    display: grid;
+    justify-items: center;
+}
+
+header {
+    display: grid;
+    justify-content: center;
+    grid-area: header;
+
+}
+
+/*============================= NAV ===========================*/
+
+header ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    border: 2px solid black;
+    width: 70rem;
+    background: rgb(36, 36, 58);
+    border-radius: 3px;
+@include tablet{
+width: 50rem;
+}
+@include mobile2{
+    flex-direction: column;
+}
+}
+
+.menu {
+    a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 15px;
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
+        color: white;
+        display: flex;
+        size: 100%;
+    }
+}
+
+ul.menu {
+    padding: 0 !important;
+}
+
+nav li:hover a {
+    display: block;
+    background: rgb(255, 255, 255);
+    color: black;
+}
