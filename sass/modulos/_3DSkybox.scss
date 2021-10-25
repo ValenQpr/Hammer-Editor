@@ -1,16 +1,16 @@
-
-.skyboxsection3D{
-    &__imagen{
+.skyboxsection3D {
+    &__imagen {
         width: 577px;
         height: 316px;
     }
-    &__title{
+
+    &__title {
         display: flex;
         justify-content: center;
-        &--subtitle{
-        flex-flow: wrap;
-        }
+
+        &--subtitle {
+            flex-flow: wrap;
+        } 
     }
 
 }
-
