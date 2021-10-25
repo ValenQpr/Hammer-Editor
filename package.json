@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^6.0.1",
-    "nodemon": "^2.0.13"
+    "sass": "^1.43.3"
   },
   "devDependencies": {},
   "scripts": {
@@ -16,4 +15,3 @@
   "author": "valentin",
   "license": "ISC"
 }
-
