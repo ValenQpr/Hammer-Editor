@@ -18,12 +18,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer"
-    ;
+    overflow-x: hidden;
+    @include tablet{
+    }
 }
 
 a {

@@ -3,14 +3,12 @@
 /*============================= ASIDE INDEX =============================*/
 aside {
     color: white;
-    margin-left: 5px;
     border: 2px solid black;
     padding: 10px;
     background: rgb(36, 36, 58);
     border-radius: 3px;
     display: flex;
     flex-direction: column;
-    
 }
 
 aside h3 {
@@ -20,7 +18,6 @@ aside h3 {
 
 section {
     border: 2px solid black;
-    margin-right: 5px;
 }
 
 
@@ -31,8 +28,7 @@ aside div {
 }
 
 aside img {
-    width: 362px;
-    height: 204px;
+    width: 100%;
     object-fit: cover;
     transition: 0.3s;
 }

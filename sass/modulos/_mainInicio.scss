@@ -4,18 +4,5 @@
 ========================================================================================================================*/
 
 main {
-    grid-area: main;
-    display: grid;
-    justify-self: center;
-    grid-template-columns: 2fr 1fr;
-    width: 70rem;
-@include tablet{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        width: 50rem;
-}
-@include mobile{
-    grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-}
+    width: 100%;
 }
