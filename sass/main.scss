@@ -1,3 +1,5 @@
+@import 'modulos/normalize';
+@import 'modulos/utilidades';
 @import 'modulos/header';
 @import 'modulos/mainInicio';
 @import 'modulos/section';
@@ -6,7 +8,6 @@
 @import 'modulos/skybox';
 @import 'modulos/mediaqueries';
 @import 'modulos/footer';
-@import 'modulos/utilidades';
 
 * {
     margin: 0;
@@ -35,3 +36,25 @@ a {
     border-bottom-width: 1px;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
+
+/*                       :::!~!!!!!:.
+                  .xUHWH!! !!?M88WHX:.
+                .X#M@$!!  !X!M$$$$$$WWx:.
+               :!!!!!!?H! :!$!$$$$$$$$$$8X:
+              !!~  ~:~!! :~!$!#$$$$$$$$$$8X:
+             :!~::!H!<   ~.U$X!?R$$$$$$$$MM!
+             ~!~!!!! .:XW$$$U!!?$$$$$$RMM!
+               !:~ .:!M"T#$$$$WX??#MRRMMM!
+               ~?WuxiW   "#$$$$8!!!!??!!!
+             :X- M$$$$       "T#$T~!8$WUXU~
+            :%  ~#$$$m:        ~!~ ?$$$$$$    te falta calcio
+          :!.-   ~T$$$$8xx.  .xWW- ~""##"
+.....   -:< !    ~?T#$$@@W@?$$      /
+W$@@M!!! .! !!     .:XUW$W!~ "~:    :
+#".:x%!!  !H:   !WM$$$$Ti.: .!WUn+!
+:::~:!!:X~ .: ?H.!u "$$$B$$$!W:U!T$$M~
+.   :X@!.-~   ?@WTWo("$$$W$TH$! `
+Wi.~!X$?!-~    : ?$$$B$Wu("$RM!
+$R@i.~~ !     :   ~$$$$$B$$en:``
+?MXT@Wx.~    :     ~"##$$$$M~
+*/

@@ -6,12 +6,32 @@ section {
     background: rgba(255, 255, 255, 0.842);
     padding: 1rem;
     border-radius: 3px;
+    border: 2px solid black;
+    margin-bottom: 15px;
+    margin-right: 7.5px;
+    .bienvenidoIndex{
+        text-align: center;
+    }
     h3 {
         font-size: 2rem;
     }
 
     p {
         font-size: 1rem;
+    }
+    .index__imagenes{
+            display: flex;
+            justify-content: center;
+            
+        width: 100%;
+        &--img {
+            border: 2px solid black;
+            width: 85%;
+            object-fit: cover;
+        }
+    }
+    .nukeEjemplo{
+text-align: center;
     }
 }
 
@@ -24,11 +44,6 @@ hr.hrMapas {
     color: black;
 }
 
-// .guias__h3Mapas {
-//     display: flex;
-//     justify-content: center;
-//     font-size: 25px;
-// }
 
 .guias__soloCSGO{
     &--Subtitulo{
@@ -45,21 +60,16 @@ hr.hrMapas {
 }
 
 .guias__sourceLogo{
-    display: flex;
-    justify-content: center;
+    a{
+        display: flex;
+        justify-content: center;
+    }
+    
     width: 100%;
     &--img {
-        // width: 524px;
-        // height: 175px;
         width: 70%;
         object-fit: cover;
     }
-}
-
-
-ul {
-    display: grid;
-    justify-content: center;
 }
 
 /*============================= SECTION MAPAS ===========================*/
@@ -78,37 +88,38 @@ ul {
     }
 
     &__SDKgif1 {
-        display: grid;
-        justify-content: center;
+        text-align: center;
 
         img {
             border: 2px solid black;
             object-fit: cover;
+            width: 60%;
         }
     }
 
     &__SDKimg1 {
-        display: grid;
-        justify-content: center;
+        text-align: center;
         padding: auto;
 
         img {
             border: 2px solid black;
-            width: 349px;
-            height: 454px;
+            width: 70%;
             object-fit: cover;
         }
     }
 
 
     &__SDKimg2 {
-        display: grid;
-        justify-content: center;
+        text-align: center;
 
         img {
-            width: 714px;
-            height: 386px;
+            width: 85%;
+            object-fit: cover;
             border: 2px solid black;
         }
     }
 }
+
+/*============================= SECTION COMPILACION ===========================*/
+
+

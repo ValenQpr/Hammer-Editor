@@ -5,6 +5,8 @@ h1 {
     color: white;
     padding-top: 15px;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
+    font-size: 2.5rem;
+    margin: 0.3rem;
 }
 
 h4 {
@@ -16,6 +18,15 @@ h3 {
     font-family: Trattatello, fantasy;
 }
 
+h5 {
+    font-family: Trattatello, fantasy;
+}
+
+h6 {
+    font-family: Trattatello, fantasy;
+}
+
+
 .titulo {
     justify-items: center;
 }
@@ -26,45 +37,99 @@ header {
 
 /*============================= NAV ===========================*/
 
-header ul {
+.menu,
+.iconos {
     display: flex;
-    justify-content: left;
+    align-items: center;
     list-style: none;
+    margin: 0;
+    padding: 0 1rem !important;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(36, 36, 58, 0.959);
+    margin-bottom: 15px;
     border: 2px solid black;
-    width: 100%;
-    background: rgb(36, 36, 58);
     border-radius: 3px;
-    font-size: 20px;
+margin-right: -15px;
+    .menu {
+        padding: 0 !important;
 
-    @include tablet {}
+        li {
+            display: flex;
+            font-size: 20px;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            transition: 0.3s;
+            &:hover {
+                background: white;
+                color: black;
 
-    @include mobile2 {
-        flex-direction: column;
+                a {
+                    color: black;
+                }
+            }
+            a {
+                
+            padding: 1rem;
+                color: white;
+            }
+
+        }
     }
-}
 
-.menu {
-    a {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 15px;
-        text-decoration: none;
-        color: white;
-        transition: 0.5s;
-        color: white;
-        size: 100%;
+    .iconos {
+        margin: 1rem;
+
+        gap: 1rem;
+        
+        li {
+            &:hover {
+
+                a {
+                    color: black;
+                }
+            }
+            a {
+                color: white;
+            }
+        }
     }
+
+    @include tablet {
+                     .icon {
+                         display: none;
+                     }
+             }
+        
+                 @include mobile2 {
+                     flex-direction: column;
+        
+                     .icon {
+                         display: none;
+                     }
+                }
+
 }
 
-ul.menu {
-    padding: 0 !important;
+.bi-twitter{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.bi-steam{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.bi-youtube{
+    width: 1.3rem;
+    height: 1.3rem;
+}
+.bi-github{
+    width: 1.3rem;
+    height: 1.3rem;
 }
 
-nav li:hover a {
-    display: block;
-    background: rgb(255, 255, 255);
-    color: black;
-    opacity: 80%;
-    border-radius: 5px;
-}

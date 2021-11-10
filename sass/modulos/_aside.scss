@@ -5,37 +5,43 @@ aside {
     color: white;
     border: 2px solid black;
     padding: 10px;
-    background: rgb(36, 36, 58);
+    background: rgba(36, 36, 58, 0.938);
     border-radius: 3px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 15px;
+    margin-left: 7.5px;
+
+    h3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    div {
+        overflow: hidden;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        transition: 0.3s;
+    }
+
+    img:hover {
+        transform: scale(1.10);
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+    @include mobile2 {
+        display: none;
+    }
 }
 
-aside h3 {
-    display: flex;
-    justify-content: center;
-}
-
-section {
-    border: 2px solid black;
-}
-
-
-aside div {
-    overflow: hidden;
-    width: 100%;
-    border: 1px solid black;
-}
-
-aside img {
-    width: 100%;
-    object-fit: cover;
-    transition: 0.3s;
-}
-
-aside img:hover {
-    transform: scale(1.10);
-}
 
 /*============================= ASIDE guias =============================*/
 
