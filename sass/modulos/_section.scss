@@ -9,9 +9,11 @@ section {
     border: 2px solid black;
     margin-bottom: 15px;
     margin-right: 7.5px;
-    .bienvenidoIndex{
+
+    .bienvenidoIndex {
         text-align: center;
     }
+
     h3 {
         font-size: 2rem;
     }
@@ -19,25 +21,36 @@ section {
     p {
         font-size: 1rem;
     }
-    .index__imagenes{
-            display: flex;
-            justify-content: center;
-            
+
+    .index__imagenes {
+        display: flex;
+        justify-content: center;
         width: 100%;
         &--img {
             border: 2px solid black;
             width: 85%;
             object-fit: cover;
+            box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
         }
     }
-    .nukeEjemplo{
-text-align: center;
+
+    .nukeEjemplo {
+        text-align: center;
     }
+
+    @include tablet {
+        section {
+            margin-right: 0px;
+        }
+    }
+
+    @include mobile2 {}
 }
 
 
 /*============================= SECTION GUIAS ===========================*/
 
+.guias{
 hr.hrMapas {
     border: none;
     border-top: 3px solid;
@@ -45,39 +58,73 @@ hr.hrMapas {
 }
 
 
-.guias__soloCSGO{
-    &--Subtitulo{
+&__soloCSGO {
+    &--Subtitulo {
         display: flex;
-           justify-content: center;
-           font-size: 25px;
+        justify-content: center;
+        font-size: 25px;
     }
-    &--lista{
-        background-color: rgba(56, 51, 51, 0.63);
-        &--renglon{
+
+    &--lista {
+        &--renglon {
             font-family: Trattatello, fantasy;
         }
     }
 }
 
-.guias__sourceLogo{
-    a{
-        display: flex;
-        justify-content: center;
-    }
-    
+&__sourceLogo {
+    display: flex;
+    justify-content: center;
+
     width: 100%;
+
     &--img {
-        width: 70%;
+        width: 90%;
         object-fit: cover;
     }
 }
 
+
+}
+
 /*============================= SECTION MAPAS ===========================*/
 
-.h2Mapa h3 {
-    display: flex;
-    justify-content: center;
+.mapas{
+    &__workshopTitulo{
+        text-align: center;
+    }
+    &__contenidoWorkshop{
+        text-align: center;
+    }
+    &__workshop {
+        a{
+            display: flex;
+            justify-content: center;
+        }
+        transition: 0.3s;
+        width: 100%;
+        
+        &--img {
+            border: 2px solid black;
+            width: 90%;
+            object-fit: cover;
+            transition: 0.3s;
+            box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
+        }
+    
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+    .h2Mapa h3 {
+        display: flex;
+        justify-content: center;
+    }
+    .contenidoWorkshop{
+        text-align: center;
+    }
 }
+
 
 /*============================= SECTION SDK ===========================*/
 
@@ -121,5 +168,3 @@ hr.hrMapas {
 }
 
 /*============================= SECTION COMPILACION ===========================*/
-
-

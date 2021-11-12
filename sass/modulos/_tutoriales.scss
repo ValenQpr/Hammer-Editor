@@ -1,0 +1,9 @@
+.tutoriales {
+    background-image: url(../img/fondoTutoriales.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+    @include tablet{
+    }
+}

@@ -27,14 +27,16 @@ aside {
         width: 100%;
         object-fit: cover;
         transition: 0.3s;
-    }
+    
 
-    img:hover {
+    &:hover {
         transform: scale(1.10);
     }
+}
 
     @include tablet {
         display: none;
+        
     }
 
     @include mobile2 {
