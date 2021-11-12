@@ -50,7 +50,8 @@ gap: 10px;
     }
 
     @include mobile3 {
-        display: block;
+        display: flex;
+        justify-content: center;
         ul{
             display: flex;
         flex-direction: column;
