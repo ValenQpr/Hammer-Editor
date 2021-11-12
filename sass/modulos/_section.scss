@@ -219,5 +219,12 @@ section {
         border-top: 2px solid black;
     }
 }
+@include tablet {
+    .row{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
 
 /*============================= SECTION COMPILACION ===========================*/
