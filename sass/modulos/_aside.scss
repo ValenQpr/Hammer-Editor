@@ -34,15 +34,11 @@ aside {
     }
 }
 
-    @include tablet {
-        display: none;
-        
-    }
-
-    @include mobile2 {
-        display: none;
-    }
+@include laptop {
+    display: none;
 }
+}
+
 
 
 /*============================= ASIDE guias =============================*/
