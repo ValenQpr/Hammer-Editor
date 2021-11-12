@@ -3,7 +3,11 @@
     @content;
     }
 }
-
+@mixin laptop{
+    @media screen and (max-width: 992px){
+        @content;
+    }
+}
 @mixin mobile{
     @media screen and (max-width: 768px){
         @content;
@@ -21,8 +25,9 @@
     }
 }
 
-@mixin laptop{
-    @media screen and (max-width: 992px){
+@mixin boostrap{
+    @media screen and (max-width: 575px){
         @content;
     }
 }
+

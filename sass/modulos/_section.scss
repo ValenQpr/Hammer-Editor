@@ -211,18 +211,34 @@ section {
 
 }
 
-@include mobile3 {
-    section {
-        margin-left: none;
-        border: none;
-        border-bottom: 2px solid black;
-        border-top: 2px solid black;
-    }
-}
+
 @include tablet {
+    section {
+        &>*{
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
     .row{
         margin-left: 0 !important;
         margin-right: 0 !important;
+        &>*{
+            padding-left: 0 !important;
+        padding-right: 0 !important;
+        }
+    }
+}
+@include boostrap {
+    section {
+        border-radius: 0;
+        border: none;
+        margin-left: none;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
+        &>*{
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
     }
 }
 

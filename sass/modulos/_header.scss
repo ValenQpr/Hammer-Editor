@@ -94,6 +94,13 @@ nav {
 
     
 }
+@include tablet {
+    
+    .row{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
 @include laptop {
 
     nav{
@@ -103,6 +110,16 @@ nav {
         .iconos {
             display: none;
         }
+    }
+}
+
+@include boostrap {
+    nav {
+        border-radius: 0;
+        border: none;
+        margin-left: none;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
     }
 }
 @include mobile2 {
