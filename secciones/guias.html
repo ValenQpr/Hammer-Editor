@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="hammer, editor, csgo, Counter, Strike, SDK, mapas,">
-    <meta name="description" content="Seccion de todas las guias para usar el hammer editor">
-    <title>Hammer Editor/guias</title>
+    <meta name="description" content="Seccion de mapas hechos con el hammer editor">
+    <title>Hammer Editor/mapas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/main.css">
@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
-
 <body>
     <div class="containter-fluid">
         <div class="row overflow-hidden">
@@ -64,81 +63,167 @@
                     </ul>
                 </nav>
             </header>
-            <main id="contenedorMainIndex" class="containter-fluid">
+            <main id="contenedorMainMapas" class="containter-fluid">
                 <div class="row overflow-hidden">
                     <section class="col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
                         <div class="guias__sourceLogo">
-                            <!-- <a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/"><img class="guias__sourceLogo--img" src="../img/Source_logo2.png" alt="source logo"></a> -->
-                            <img class="guias__sourceLogo--img" src="../img/Source_logo2.png" alt="source logo">
+                            <img class="guias__sourceLogo--img" src="../img/Source_logo2.png" alt="source logo" />
                         </div>
-                        <!-- <h3 class="guias__workshopTitulo">Unite a Steam Workshop!</h3>
-                            <div class="guias__workshop">
-                                <div class="borde">
-                                <a href="https://steamcommunity.com/app/730/workshop/" target="_blank"> <img
-                                        class="guias__workshop--img" src="../img/SteamWorkshop.jpg" alt="Workshop"></a>
-                                    </div>
-                            </div> -->
-                            <hr>
-                            <h3 class="guias__hammerIndex">Hammer Editor index:</h3>
-                            <h3 class="guias__basico--titulo" >Basico:</h3>
+                        <hr />
+                        <h3 class="guias__hammerIndex">Hammer Editor index:</h3>
+
+                        <!-- lista basica -->
+
+                        <h3 class="guias__basico--titulo">Basico:</h3>
+                        <div class="guias__lista">
                             <ul class="guias__basico">
-                               <!-- <h3 class="guias__basico--titulo"> Basico:</h3> -->
-                               <li class="guias__basico--sdk">
-                                <a href="../subsecciones/SDK.html"><h5> Instalar sdk</h5></a>  <p><strong> (Instalacion completa del la herramienta de creacion de mapas)</strong></p>
-                               </li>
-                             <li><h5>Skybox</h5></li>
-                             <li><h5>Compilacion</h5></li>
-                               </ul>
-                        <!-- <table class="table table-dark">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">
-                                        <h5>Basico</h5>
-                                    </th>
-                                    <th scope="col">
-                                        <h5>Normal</h5>
-                                    </th>
-                                    <th scope="col">
-                                        <h5>Avanzado</h5>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td><a href="../subsecciones/SDK.html">Instalar sdk</a></td>
-                                    <td><a href="../subsecciones/sonidos.html">Sonidos</a></td>
-                                    <td><a href="../subsecciones/3Dskybox.html">3D Skybox</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td><a href="../subsecciones/iluminacion.html">Iluminacion</a></td>
-                                    <td><a href="../subsecciones/displacements.html">Displacements</a></td>
-                                    <td><a href="../subsecciones/cubemaps.html">Cubemaps</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td><a href="../subsecciones/skybox.html">Skybox</a></td>
-                                    <td><a href="../subsecciones/compilacion.html">Compilacion</a></td>
-                                    <td><a href="../subsecciones/optimizacion.html">Optimizacion</a></td>
-                                </tr>
-                            </tbody>
-                        </table> -->
-                        <div>
-                            <hr class="guias__hrMapas">
+                                <div class="guias__basico--sdk">
+                                    <li>
+                                        <a href="../subsecciones/SDK.html">
+                                            <h5>Instalar sdk</h5>
+                                        </a>
+                                    </li>
+                                    <p class="guias__basico--desc">
+                                        <strong>
+                                            (Instalacion de la herramienta de creacion de
+                                            mapas)</strong>
+                                    </p>
+                                </div>
+                                <div class="guias__basico--skybox">
+                                    <li>
+                                        <a href="../subsecciones/skybox.html">
+                                            <h5>Skybox y brush</h5>
+                                        </a>
+                                    </li>
+                                    <p class="guias__basico--desc">
+                                        <strong>
+                                            (Aplicar cielo y geometria al mapa)</strong>
+                                    </p>
+                                </div>
+                                <div class="guias__basico--compilacion">
+                                    <li>
+                                        <a href="../subsecciones/compilacion.html">
+                                            <h5>Compilacion</h5>
+                                        </a>
+                                    </li>
+                                    <p class="guias__basico--desc">
+                                        <strong>
+                                            (Renderizado y compilacion completa del mapa)</strong>
+                                    </p>
+                                </div>
+                            </ul>
                         </div>
+                        <!-- lista normal -->
+
+                        <h3 class="guias__normal--titulo">Normal:</h3>
+                        <div class="guias__lista">
+                            <ul class="guias__normal">
+                                <div class="guias__normal--iluminacion">
+                                    <li>
+                                        <a href="../subsecciones/iluminacion.html">
+                                            <h5>Iluminacion</h5>
+                                        </a>
+                                    </li>
+                                    <p class="guias__normal--desc">
+                                        <strong>
+                                            (Aplicar iluminacion completa)</strong>
+                                    </p>
+                                </div>
+                                <div class="guias__normal--sonidos">
+                                    <li>
+                                        <a href="../subsecciones/sonidos.html">
+                                            <h5>Sonidos</h5>
+                                        </a>
+                                    </li>
+                                    <p class="guias__normal--desc">
+                                        <strong>
+                                            (Aplicar sonido ambiental al mapa)</strong>
+                                    </p>
+                                </div>
+                                <div class="guias__normal--displacements">
+                                    <li>
+                                        <a href="../subsecciones/displacements.html">
+                                            <h5>Displacements</h5>
+                                        </a>
+                                    </li>
+                                    <p class="guias__normal--desc">
+                                        <strong>
+                                            (Aplicar terreno y verticalidad al mapa)</strong>
+                                    </p>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- lista avanzada -->
+
+                        <h3 class="guias__avanzado--titulo">Avanzado:</h3>
+                        <div class="guias__lista">
+                            <ul class="guias__avanzado">
+                                <div class="guias__avanzado--skybox3d">
+                                    <li>
+                                        <a href="../subsecciones/3Dskybox.html">
+                                            <h5>3Dskybox</h5>
+                                        </a>
+                                    </li>
+                                    <p class="guias__avanzado--desc">
+                                        <strong>
+                                            (Aplicar Skybox 3D al mapa)</strong>
+                                    </p>
+                                </div>
+                                <div class="guias__avanzado--cubemaps">
+                                    <li>
+                                        <a href="../subsecciones/cubemaps.html">
+                                            <h5>Cubemaps</h5>
+                                        </a>
+                                    </li>
+                                    <p class="guias__avanzado--desc">
+                                        <strong>
+                                            (Aplicar Reflejos)</strong>
+                                    </p>
+                                </div>
+                                <div class="guias__avanzado--optimizacion">
+                                    <li>
+                                        <a href="../subsecciones/optimizacion.html">
+                                            <h5>Optimizacion</h5>
+                                        </a>
+                                    </li>
+                                    <p class="guias__avanzado--desc">
+                                        <strong>
+                                            (Optimizacion completa al mapa)</strong>
+                                    </p>
+                                </div>
+                            </ul>
+                        </div>
+                        <br>
                         <div class="guias__soloCSGO">
-                            <h3 class="guias__soloCSGO--Subtitulo">Exclusivo de CSGO</h3>
-                            <div class="guias__soloCSGO--lista">
-                                <ul>
-                                    <li class="guias__soloCSGO--renglon">Sitios de bomba y zonas de compra</li>
-                                    <li class="guias__soloCSGO--renglon">Publicar mapa en Workshop </li>
-                                    <li class="guias__soloCSGO--renglon">Editar pagina de workshop</li>
+                            <h3 class="guias__hammerIndex">Exclusivo de CSGO</h3>
+                            <div class="guias__lista">
+                                <ul class="guias__CSGO">
+                                    <div class="guias__CSGO--bomba">
+                                        <li>
+                                            <a href="../subsecciones/sitios.html">
+                                                <h5>Sitios de bomba y zonas de compra</h5>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="guias__CSGO--workshop">
+                                        <li>
+                                            <a href="../subsecciones/cubemaps.html">
+                                                <h5>Publicar mapa en Workshop</h5>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="guias__CSGO--workshopEdit">
+                                        <li>
+                                            <a href="../subsecciones/optimizacion.html">
+                                                <h5>Publicar mapa en Workshop</h5>
+                                            </a>
+                                        </li>
+                                    </div>
                                 </ul>
                             </div>
                         </div>
-                    </section>
+                
+                </section>
                     <aside class="col-lg-3">
                         <h3>Workshop</h3>
                         <p>Lista de los mapas mas conocidos del workshop de CSGO que fueron hechos con la herramienta
@@ -161,8 +246,7 @@
                                     target="_blank"><img src="../img/de_santorini.jpg" alt="mapas de workshop" /></a>
                             </div>
                             <div>
-                                <a title="Cache"
-                                    href="https://steamcommunity.com/sharedfiles/filedetails/?id=1855851320"
+                                <a title="Cache" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1855851320"
                                     target="_blank"><img src="../img/De_cache.jpg" alt="mapas de workshop" /></a>
                             </div>
                         </div>
@@ -186,22 +270,11 @@
                                     target="_blank"><img src="../img/de_pitstop.jpg" alt="mapas de workshop" /></a>
                             </div>
                             <div>
-                                <a title="Ravine"
-                                    href="https://steamcommunity.com/sharedfiles/filedetails/?id=2257823084&searchtext=ravine"
+                                <a title="Ravine" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2257823084&searchtext=ravine"
                                     target="_blank"><img src="../img/de_ravine.jpg" alt="mapas de workshop" /></a>
                             </div>
                         </div>
                     </aside>
-                    <!-- <aside class="col-lg-3">
-                        <div>
-                            <a class="iluminacion" title="Anubis" href="../tutoriales/iluminacion.html"><img
-                                    src="../img/Iluminacion.jpg" alt="imagen luz" /></a>
-                        </div>
-                        <div>
-                            <a class="imgAnubis" title="Anubis" href="../tutoriales/cubemaps.html"><img src="../img/cubemap.jpg"
-                                    alt="imagen cubemap" /></a>
-                        </div>
-                    </aside> -->
                 </div>
             </main>
             <footer class="footer">
@@ -226,17 +299,15 @@
                     <div class="footer__redes">
                         <ul>
                             <li>
-                                <a href="https://twitter.com/VaIenQpr"> <svg xmlns="http://www.w3.org/2000/svg"
-                                        width="16" height="16" fill="currentColor" class="bi bi-twitter"
-                                        viewBox="0 0 16 16">
+                                <a href="https://twitter.com/VaIenQpr"> <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                        height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
                                         <path
                                             d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
                                     </svg><span>Twitter</span></a>
                             </li>
                             <li>
-                                <a href="https://steamcommunity.com/id/ValenQpr/"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-steam" viewBox="0 0 16 16">
+                                <a href="https://steamcommunity.com/id/ValenQpr/"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-steam" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M.329 10.333A8.01 8.01 0 0 0 7.99 16C12.414 16 16 12.418 16 8s-3.586-8-8.009-8A8.006 8.006 0 0 0 0 7.468l.003.006 4.304 1.769A2.198 2.198 0 0 1 5.62 8.88l1.96-2.844-.001-.04a3.046 3.046 0 0 1 3.042-3.043 3.046 3.046 0 0 1 3.042 3.043 3.047 3.047 0 0 1-3.111 3.044l-2.804 2a2.223 2.223 0 0 1-3.075 2.11 2.217 2.217 0 0 1-1.312-1.568L.33 10.333Zm4.539 2.35a1.715 1.715 0 0 0 1.318-3.165 1.705 1.705 0 0 0-1.263-.02l1.023.424a1.261 1.261 0 1 1-.97 2.33l-.99-.41a1.7 1.7 0 0 0 .882.84Zm3.726-6.687a2.03 2.03 0 0 0 2.027 2.029 2.03 2.03 0 0 0 2.027-2.029 2.03 2.03 0 0 0-2.027-2.027 2.03 2.03 0 0 0-2.027 2.027Zm2.03-1.527a1.523 1.523 0 1 0 .003 3.047 1.523 1.523 0 0 0-.003-3.047Z" />
                                     </svg><span>Steam</span></a>
@@ -250,7 +321,7 @@
                                     </svg><span>Youtube</span></a>
                             </li>
                             <li>
-
+    
                                 <a href="https://github.com/ValenQpr"><svg xmlns="http://www.w3.org/2000/svg" width="16"
                                         height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
                                         <path

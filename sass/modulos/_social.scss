@@ -11,11 +11,9 @@
 
       .fa-#{$var} {
         color: white;
-        border-radius: 50%;
 
         &:hover {
           background-color: $color;
-          transform: rotate(360deg);
         }
       }
 
@@ -27,7 +25,7 @@
         transition: all 500ms ease;
         font-size: 30px;
         &:hover {
-          padding: 30px 30px;
+          padding: 20px 20px;
           left: 20px;
         }
       }

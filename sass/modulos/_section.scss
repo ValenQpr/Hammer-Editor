@@ -9,9 +9,9 @@ section {
   border: 2px solid black;
   margin-bottom: 15px;
   margin-right: 7.5px;
-//   box-shadow: 0px -1px 48px 2px rgba(0, 0, 0, 0.75);
-//   -webkit-box-shadow: 0px -1px 48px 2px rgba(0, 0, 0, 0.75);
-//   -moz-box-shadow: 0px -1px 48px 2px rgba(0, 0, 0, 0.75);
+  //   box-shadow: 0px -1px 48px 2px rgba(0, 0, 0, 0.75);
+  //   -webkit-box-shadow: 0px -1px 48px 2px rgba(0, 0, 0, 0.75);
+  //   -moz-box-shadow: 0px -1px 48px 2px rgba(0, 0, 0, 0.75);
 
   .bienvenidoIndex {
     text-align: center;
@@ -43,56 +43,11 @@ section {
   }
 }
 
-/*============================= SECTION GUIAS ===========================*/
+/*============================= SECTION HAMMER ===========================*/
 
 .guias {
-  hr.hrMapas {
-    border: none;
-    border-top: 3px solid;
-    color: black;
-  }
-
   &__hammerIndex {
     text-align: center;
-  }
-
-  &__basico {
-    a {
-      display: flex;
-      align-content: center;
-      &:hover {
-        color: black;
-        background-color: rgba(255, 255, 255, 0.678);
-
-        //
-        border-radius: 2px;
-        text-align: center;
-      }
-    }
-
-    // &--titulo{
-    //     text-align: center;
-    // }
-    h3,
-    h5,
-    p {
-      color: white;
-      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
-    }
-
-    background-image: url(../img/basicoFondo.png);
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
-    border-radius: 3px;
-    border: 1px solid black;
-    padding: 1rem;
-
-    &--sdk {
-      p {
-        padding-left: 1rem;
-      }
-
-      display: flex;
-    }
   }
 
   &__soloCSGO {
@@ -117,6 +72,263 @@ section {
     &--img {
       width: 90%;
       object-fit: cover;
+    }
+  }
+
+  /*============================= LISTA BASICA ===========================*/
+  
+  &__lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__basico {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/basicoFondo.png);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
+    border-radius: 3px;
+    border: 2px solid black;
+    padding: 1rem;
+    width: 95%;
+    &--sdk {
+      p {
+        display: flex;
+        justify-content: center;
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+    li {
+      list-style: none;
+    }
+    p {
+      padding-top: 1rem;
+    }
+    a {
+      display: flex;
+      align-content: center;
+      background-color: rgba(255, 255, 255, 0.438);
+      border-radius: 3px;
+      padding: 1rem;
+      padding-bottom: 6px;
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        h5 {
+          color: black;
+        }
+      }
+    }
+
+    &--skybox {
+      p {
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+    &--compilacion {
+      p {
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+
+    h3,
+    h5,
+    p {
+      color: white;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
+      transition: 0.3s;
+    }
+  }
+
+  /*============================= LISTA NORMAL ===========================*/
+
+  &__normal {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/fondoNormal.jpg);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
+    border-radius: 3px;
+    border: 2px solid black;
+    padding: 1rem;
+    width: 95%;
+    &--iluminacion {
+      p {
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+    li {
+      list-style: none;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      padding-top: 1rem;
+    }
+    a {
+      display: flex;
+      align-content: center;
+      background-color: rgba(0, 0, 0, 0.452);
+      border-radius: 3px;
+      padding: 1rem;
+      padding-bottom: 6px;
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        h5 {
+          color: black;
+        }
+      }
+    }
+
+    &--sonidos {
+      p {
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+
+    &--displacements {
+      p {
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+
+    h3,
+    h5,
+    p {
+      color: white;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
+      transition: 0.3s;
+    }
+  }
+
+  /*============================= LISTA AVANZADA ===========================*/
+
+  &__avanzado {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/fondoAvanzado.jpg);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
+    border-radius: 3px;
+    border: 2px solid black;
+    padding: 1rem;
+    width: 95%;
+    &--skybox3d {
+      p {
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+    li {
+      list-style: none;
+    }
+    p {
+      display: flex;
+      justify-content: center;
+      padding-top: 1rem;
+    }
+    a {
+      display: flex;
+      align-content: center;
+      background-color: rgba(0, 0, 0, 0.452);
+      border-radius: 3px;
+      padding: 1rem;
+      padding-bottom: 6px;
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        h5 {
+          color: black;
+        }
+      }
+    }
+
+    &--cubemaps {
+      p {
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+
+    &--optimizacion {
+      p {
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+
+    h3,
+    h5,
+    p {
+      color: white;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
+      transition: 0.3s;
+    }
+  }
+
+  /*============================= LISTA CSGO ===========================*/
+
+  &__CSGO {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/fondoCSGO.jpg);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
+    border-radius: 3px;
+    border: 2px solid black;
+    padding: 1rem;
+    width: 95%;
+    &--bomba {
+      a {
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+    li {
+      list-style: none;
+      margin: 2px;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      padding-top: 1rem;
+    }
+    a {
+      display: flex;
+      align-content: center;
+      background-color: rgba(0, 0, 0, 0.452);
+      border-radius: 3px;
+      padding: 1rem;
+      padding-bottom: 6px;
+      &:hover {
+        background-color: rgb(255, 255, 255);
+        h5 {
+          color: black;
+        }
+      }
+    }
+
+    &--workshop {
+      a {
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+
+    &--workshopEdit {
+      a {
+        padding-left: 1rem;
+      }
+      display: flex;
+    }
+
+    h3,
+    h5,
+    p {
+      color: white;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
+      transition: 0.3s;
     }
   }
 }
@@ -203,6 +415,26 @@ section {
     }
   }
 }
+/*============================= SECTION SKYBOX ===========================*/
+
+.skyboxsection{
+  &__imagen{
+      border: 2px solid black;
+      text-align: center;
+  }
+  &__title{
+      display: flex;
+      justify-content: center;
+      &--subtitle{
+      flex-flow: wrap;
+      }
+  }
+
+}
+
+
+
+/*============================= MEDIA QUERIES ===========================*/
 
 @include tablet {
   section {
@@ -219,6 +451,9 @@ section {
       padding-right: 0 !important;
     }
   }
+  .social {
+    display: none;
+  }
 }
 @include boostrap {
   section {
@@ -233,5 +468,95 @@ section {
     }
   }
 }
+@include mobile3 {
+  .guias {
+    &__basico {
+      align-items: center;
+      &--sdk {
+        a {
+          text-align: center;
+        }
 
-/*============================= SECTION COMPILACION ===========================*/
+        p {
+          display: none;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+      &--skybox {
+        margin: 5px;
+        p {
+          display: none;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+      &--compilacion {
+        p {
+          display: none;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &__normal {
+      align-items: center;
+      &--iluminacion {
+        a {
+          text-align: center;
+        }
+
+        p {
+          display: none;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+      &--sonidos {
+        margin: 5px;
+        p {
+          display: none;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+      &--displacements {
+        p {
+          display: none;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &__avanzado {
+      align-items: center;
+      &--skybox3d {
+        a {
+          text-align: center;
+        }
+
+        p {
+          display: none;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+      &--cubemaps {
+        margin: 5px;
+        p {
+          display: none;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+      &--optimizacion {
+        p {
+          display: none;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
