@@ -1,4 +1,4 @@
-@import 'mediaqueries';
+@import "mediaqueries";
 
 h1 {
     font-family: Trattatello, fantasy;
@@ -9,13 +9,13 @@ h1 {
     margin: 0.3rem;
 }
 
+h3 {
+    font-family: Trattatello, fantasy;
+}
+
 h4 {
     color: white;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
-}
-
-h3 {
-    font-family: Trattatello, fantasy;
 }
 
 h5 {
@@ -25,7 +25,6 @@ h5 {
 h6 {
     font-family: Trattatello, fantasy;
 }
-
 
 .titulo {
     justify-items: center;
@@ -46,7 +45,6 @@ header {
     padding: 0 1rem !important;
 }
 
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -55,8 +53,12 @@ nav {
     border: 2px solid black;
     border-radius: 3px;
     margin-right: -15px;
+    // box-shadow: 0px -1px 48px 2px rgba(0,0,0,0.75);
+    // -webkit-box-shadow: 0px -1px 48px 2px rgba(0,0,0,0.75);
+    // -moz-box-shadow: 0px -1px 48px 2px rgba(0,0,0,0.75);
     .menu {
         padding: 0 !important;
+
         li {
             display: flex;
             font-size: 20px;
@@ -64,48 +66,53 @@ nav {
             height: 100%;
             align-items: center;
             transition: 0.3s;
+
             &:hover {
                 background: white;
                 color: black;
+
                 a {
                     color: black;
                 }
             }
+
             a {
                 padding: 1rem;
                 color: white;
             }
         }
     }
+
     .iconos {
         margin: 1rem;
         gap: 1rem;
+
         li {
             &:hover {
                 a {
                     color: black;
                 }
             }
+
             a {
                 color: white;
             }
         }
     }
-
-    
 }
+
 @include tablet {
-    
-    .row{
+    .row {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
 }
-@include laptop {
 
-    nav{
+@include laptop {
+    nav {
         margin-right: 0px;
     }
+
     .menu {
         .iconos {
             display: none;
@@ -122,37 +129,37 @@ nav {
         border-top: 2px solid black;
     }
 }
+
 @include mobile2 {
     .menu {
         flex-direction: column;
         justify-self: center;
+
         a {
             justify-self: center;
         }
-
     }
-    
+
     .iconos {
         display: none;
     }
 }
 
 @include mobile3 {
-    nav{
+    nav {
         display: flex;
         justify-content: center;
     }
+
     .menu {
         display: flex;
         justify-content: center;
-        }
+    }
 
-    
     .iconos {
         display: none;
     }
 }
-
 
 .bi-twitter {
     width: 1.3rem;

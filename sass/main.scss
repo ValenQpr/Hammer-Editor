@@ -9,33 +9,35 @@
 @import 'modulos/mediaqueries';
 @import 'modulos/footer';
 @import 'modulos/tutoriales';
+@import 'modulos/social';
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url(../img/Fondo.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow-x: hidden;
-    @include mobile3{
-    }
+  background-image: url(../img/Fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
 }
 
+@include mobile3 {}
+
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 
 
 .table>:not(caption)>*>* {
-    padding: .5rem .5rem;
-    background-color: rgba(0, 0, 0, 0.774);
-    border-bottom-width: 1px;
-    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+  padding: .5rem .5rem;
+  background-color: rgba(0, 0, 0, 0.774);
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 
 /*                       :::!~!!!!!:.

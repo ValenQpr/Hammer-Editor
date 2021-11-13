@@ -27,12 +27,12 @@
             li {
                 border-radius: 3px;
                 border: 1px solid white;
-                transition: 0.3s;
+                transition: 1.5s;
 
                 &:hover {
                     background: white;
                     color: black;
-
+transform: rotatey(360deg);
                     a {
                         color: black;
                     }

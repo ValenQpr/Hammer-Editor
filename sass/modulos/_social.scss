@@ -1,0 +1,42 @@
+
+@each $var, $color in $social {
+  .social {
+    position: fixed;
+    left: 5%;
+    top: 200px;
+    z-index: 2000;
+
+    ul {
+      list-style: none;
+
+      .fa-#{$var} {
+        color: white;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: $color;
+          transform: rotate(360deg);
+        }
+      }
+
+      a {
+        display: inline-block;
+        color: white;
+        padding: 15px 5px;
+        text-decoration: none;
+        transition: all 500ms ease;
+        font-size: 30px;
+        &:hover {
+          padding: 30px 30px;
+          left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@include boostrap {
+  .social {
+    display: none;
+  }
+}

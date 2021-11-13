@@ -1,246 +1,237 @@
-@import 'mediaqueries';
+@import "mediaqueries";
 
-/*============================= SECTION INDEX ===========================*/
+/*============================= SECTION GLOBAL ===========================*/
 
 section {
-    background: rgba(255, 255, 255, 0.842);
-    padding: 1rem;
-    border-radius: 3px;
-    border: 2px solid black;
-    margin-bottom: 15px;
-    margin-right: 7.5px;
+  background: #ffffffcb;
+  padding: 1rem;
+  border-radius: 3px;
+  border: 2px solid black;
+  margin-bottom: 15px;
+  margin-right: 7.5px;
+//   box-shadow: 0px -1px 48px 2px rgba(0, 0, 0, 0.75);
+//   -webkit-box-shadow: 0px -1px 48px 2px rgba(0, 0, 0, 0.75);
+//   -moz-box-shadow: 0px -1px 48px 2px rgba(0, 0, 0, 0.75);
 
-    .bienvenidoIndex {
-        text-align: center;
+  .bienvenidoIndex {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .index__imagenes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &--img {
+      border: 2px solid black;
+      width: 85%;
+      object-fit: cover;
+      box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
     }
+  }
 
-    h3 {
-        font-size: 2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
-
-    .index__imagenes {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-
-        &--img {
-            border: 2px solid black;
-            width: 85%;
-            object-fit: cover;
-            box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
-        }
-    }
-
-    .nukeEjemplo {
-        text-align: center;
-    }
-
-
+  .nukeEjemplo {
+    text-align: center;
+  }
 }
-
-
 
 /*============================= SECTION GUIAS ===========================*/
 
 .guias {
-    hr.hrMapas {
-        border: none;
-        border-top: 3px solid;
+  hr.hrMapas {
+    border: none;
+    border-top: 3px solid;
+    color: black;
+  }
+
+  &__hammerIndex {
+    text-align: center;
+  }
+
+  &__basico {
+    a {
+      display: flex;
+      align-content: center;
+      &:hover {
         color: black;
-    }
+        background-color: rgba(255, 255, 255, 0.678);
 
-    &__hammerIndex {
+        //
+        border-radius: 2px;
         text-align: center;
+      }
     }
 
-    &__basico {
-        a { display: flex;
-            align-content: center;
-            &:hover {
-                color: black;
-                    background-color: rgba(255, 255, 255, 0.678);
-                
-                // 
-                border-radius: 2px;
-                text-align: center;
-            }
-        }
-
-        // &--titulo{
-        //     text-align: center;
-        // }
-        h3,
-        h5,
-        p {
-            color: white;
-            text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
-        }
-
-        background-image: url(../img/basicoFondo.png);
-        box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
-        border-radius: 3px;
-        border: 1px solid black;
-        padding: 1rem;
-
-        &--sdk {
-            p {
-                padding-left: 1rem;
-            }
-
-            display: flex;
-        }
+    // &--titulo{
+    //     text-align: center;
+    // }
+    h3,
+    h5,
+    p {
+      color: white;
+      text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
     }
 
-    &__soloCSGO {
-        &--Subtitulo {
-            display: flex;
-            justify-content: center;
-            font-size: 25px;
-        }
+    background-image: url(../img/basicoFondo.png);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 1rem;
 
-        &--lista {
-            &--renglon {
-                font-family: Trattatello, fantasy;
-            }
-        }
+    &--sdk {
+      p {
+        padding-left: 1rem;
+      }
+
+      display: flex;
+    }
+  }
+
+  &__soloCSGO {
+    &--Subtitulo {
+      display: flex;
+      justify-content: center;
+      font-size: 25px;
     }
 
-    &__sourceLogo {
-        display: flex;
-        justify-content: center;
-
-        width: 100%;
-
-        &--img {
-            width: 90%;
-            object-fit: cover;
-        }
+    &--lista {
+      &--renglon {
+        font-family: Trattatello, fantasy;
+      }
     }
+  }
 
+  &__sourceLogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
+    &--img {
+      width: 90%;
+      object-fit: cover;
+    }
+  }
 }
 
 /*============================= SECTION MAPAS ===========================*/
 
 .mapas {
-    &__workshopTitulo {
-        text-align: center;
+  &__workshopTitulo {
+    text-align: center;
+  }
+
+  &__contenidoWorkshop {
+    text-align: center;
+  }
+
+  &__workshop {
+    a {
+      display: flex;
+      justify-content: center;
     }
 
-    &__contenidoWorkshop {
-        text-align: center;
+    transition: 0.3s;
+    width: 100%;
+
+    &--img {
+      border: 2px solid black;
+      width: 90%;
+      object-fit: cover;
+      transition: 0.3s;
+      box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
     }
 
-    &__workshop {
-        a {
-            display: flex;
-            justify-content: center;
-        }
-
-        transition: 0.3s;
-        width: 100%;
-
-        &--img {
-            border: 2px solid black;
-            width: 90%;
-            object-fit: cover;
-            transition: 0.3s;
-            box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
-        }
-
-        &:hover {
-            transform: scale(1.03);
-        }
+    &:hover {
+      transform: scale(1.03);
     }
+  }
 
-    .h2Mapa h3 {
-        display: flex;
-        justify-content: center;
-    }
+  .h2Mapa h3 {
+    display: flex;
+    justify-content: center;
+  }
 
-    .contenidoWorkshop {
-        text-align: center;
-    }
+  .contenidoWorkshop {
+    text-align: center;
+  }
 }
-
 
 /*============================= SECTION SDK ===========================*/
 
 .mainsdk {
-    &__h2SDK {
-        display: grid;
-        justify-content: center;
+  &__h2SDK {
+    display: grid;
+    justify-content: center;
+  }
+
+  &__SDKgif1 {
+    text-align: center;
+
+    img {
+      border: 2px solid black;
+      object-fit: cover;
+      width: 60%;
     }
+  }
 
-    &__SDKgif1 {
-        text-align: center;
+  &__SDKimg1 {
+    text-align: center;
+    padding: auto;
 
-        img {
-            border: 2px solid black;
-            object-fit: cover;
-            width: 60%;
-        }
+    img {
+      border: 2px solid black;
+      width: 70%;
+      object-fit: cover;
     }
+  }
 
-    &__SDKimg1 {
-        text-align: center;
-        padding: auto;
+  &__SDKimg2 {
+    text-align: center;
 
-        img {
-            border: 2px solid black;
-            width: 70%;
-            object-fit: cover;
-        }
+    img {
+      width: 85%;
+      object-fit: cover;
+      border: 2px solid black;
     }
-
-
-    &__SDKimg2 {
-        text-align: center;
-
-        img {
-            width: 85%;
-            object-fit: cover;
-            border: 2px solid black;
-        }
-    }
-
-
+  }
 }
-
 
 @include tablet {
-    section {
-        &>*{
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
+  section {
+    & > * {
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
-    .row{
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        &>*{
-            padding-left: 0 !important;
-        padding-right: 0 !important;
-        }
+  }
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    & > * {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
     }
+  }
 }
 @include boostrap {
-    section {
-        border-radius: 0;
-        border: none;
-        margin-left: none;
-        border-bottom: 2px solid black;
-        border-top: 2px solid black;
-        &>*{
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
+  section {
+    border-radius: 0;
+    border: none;
+    margin-left: none;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    & > * {
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
+  }
 }
-
 
 /*============================= SECTION COMPILACION ===========================*/
