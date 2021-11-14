@@ -63,65 +63,116 @@
             </header>
             <main>
                 <div class=" row overflow-hidden">
-                <section class="skyboxsection col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
-                    <h3 class="skyboxsection__title">Skybox 2D</h3>
-                    <p class="skyboxsection__info"> Un skybox 2D es un skybox que carece de profundidad geométrica, que
-                        consiste
-                        solo en una textura de skybox (sin usar la entidad sky_camera para mostrar un modelo en
-                        miniatura 3D).
-                    </p>
-                    <h3 class="skyboxsection__title skyboxsection__title--subtitle"> Agregar cielo a un mapa</h3>
-                    <img class="skyboxsection__imagen" src="../img/Skybox_Template.jpg" alt="skycamera">
-                    <p class="skyboxsection__info">
-                        Simplemente texturice un pincel de mundo (no una entidad de pincel ) con tools/toolsskyboxo (si
-                        está
-                        mapeando para el cuadro naranja ) el tools/toolsskybox2dmaterial.
-                        En el juego, el skybox se verá a través de cada superficie a la que toolsskyboxse aplique.
-                        toolsskyboxNo es necesario que los pinceles tengan forma de caja. </p>
-                    <h3 class="skyboxsection__title skyboxsection__title--subtitle"> Cambiar el palco que se muestra
-                    </h3>
-                    <p>Si no le gusta el cielo estándar "sky_day01_01", puede cambiarlo configurando el nombre del
-                        skybox en el
-                        cuadro de diálogo Propiedades del mapa de Hammer. Con el mapa correcto abierto, siga estos
-                        pasos:</p>
-                    <ul>
-                        <li>Ir al menú Mapa</li>
-                        <li>Elija Propiedades del mapa ... de la lista desplegable</li>
-                        <li>En la ventana Propiedades del objeto, seleccione el campo Nombre de textura de Skybox.</li>
-                        <li>Reemplace el cielo que aparece allí con el nombre del palco que desea mostrar.</li>
-                    </ul>
-                    <img class="skyboxsection__imagen" src="../img/Sky_change.png" alt="skycamera">
-                </section>
-                <aside class="col-lg-3">
-                    <div>
-                        <a class="iluminacion" title="Anubis" href="../tutoriales/iluminacion.html"><img
-                                src="../img/Iluminacion.jpg" alt="" /></a>
-                    </div>
-                    <div>
-                        <a class="imgAnubis" title="Anubis" href="../tutoriales/cubemaps.html"><img
-                                src="../img/cubemap.jpg" alt="" /></a>
-                    </div>
-                </aside>
-            </div>
+                    <section class="skyboxsection col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+
+                        <!-- brush -->
+
+                        <h3>Skybox y Brush</h3>
+                        <h5>Construcción básica</h5>
+                        <p>Los sólidos 3D simples (cubos, cilindros, etc.) se denominan pinceles dentro del editor de
+                            Hammer. Estos objetos son los bloques de construcción básicos para todos los mapas creados
+                            para Source.
+                            Los suelos, las paredes y los techos —en resumen, todas las geometrías que no sean modelos—
+                            se componen de pinceles.</p>
+                        <ol>
+                            <li>Seleccione la herramienta <strong> Block Tool.</strong>
+                            </li>
+                            <li>Especifique el tamaño de su pincel haciendo clic y arrastrando el mouse en la Vista 2D
+                                superior (el panel de ventana superior derecho por defecto) para crear un cuadro, como
+                                se muestra en la Figura 2.</li>
+                            <li>Crea el objeto presionando <strong>↵ Enter.</strong> Alternativamente, haga clic derecho
+                                dentro del
+                                pincel y elija <strong> Create object.</strong></li>
+                        </ol>
+                        <p> <strong> Tip: </strong>si su objeto aún no parece texturizado, haga clic en la vista de
+                            cámara y vaya a <strong>
+                                View > 3D Textured Polygons</strong> para ver una versión texturizada de su objeto.</p>
+                        <div class="CENTRATE">
+                            <div class="skyboxsection__imagen--brush">
+                                <img class="skyboxsection__imagen--brush1" src="../img/brush1.png" alt="skycamera">
+                                <img class="skyboxsection__imagen--brush2" src="../img/brush2.png" alt="skycamera">
+                            </div>
+                        </div>
+                        <br>
+                        <h3>Seleccionar los brush</h3>
+                        <p>Haga clic en la herramienta <strong>Selection tool</strong>. Se utiliza para aislar un objeto o grupo de objetos que desea manipular. Con la herramienta de selección activa, resalte su pincel haciendo clic en él en una de las ventanas. (En una ventana 2D, haga clic en los bordes o el centro del pincel. En la vista de cámara, haga clic en cualquier parte del objeto).</p>
+                        <p>Notará que el pincel seleccionado se resaltará en rojo y obtendrá ocho pequeños controles cuadrados blancos en las vistas 2D. Estos controladores le permiten rotar y transformar la selección.</p>
+                        <p>Tenga en cuenta que el pincel parece una caja de estructura de alambre 3D. Aplana la caja para que parezca una losa delgada y muévela de modo que la cámara quede encima. Piense en el cepillo como un trozo en 3D de techo, piso o pared, no como una habitación en sí misma. Se necesitan 6 pinceles para hacer una habitación.</p>
+                        <div class="skyboxsection__imagen">
+                            <img class="skyboxsection__imagen--texturas" src="../img/brush3.png"
+                                alt="skycamera">
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <!-- Skybox -->
+                        <h3> Agregar cielo a un mapa</h3>
+                        <p> Un skybox 2D es un skybox que carece de profundidad geométrica, que
+                            consiste
+                            solo en una textura de skybox (sin usar la entidad sky_camera para mostrar un modelo en
+                            miniatura 3D).
+                        </p>
+                        
+                        <div class="skyboxsection__imagen">
+                            <img class="skyboxsection__imagen--texturas" src="../img/Skybox_Template.jpg"
+                                alt="skycamera">
+                        </div>
+                        <br>
+                        <p>
+                            Simplemente texturice un pincel de mundo (no una entidad de pincel ) con tools/toolsskyboxo
+                            (si
+                            está
+                            mapeando para el cuadro naranja ) el tools/toolsskybox2dmaterial.
+                            En el juego, el skybox se verá a través de cada superficie a la que toolsskyboxse aplique.
+                            toolsskyboxNo es necesario que los pinceles tengan forma de caja. </p>
+                        <h3> Cambiar el palco que se muestra
+                        </h3>
+                        <p>Si no le gusta el cielo estándar "sky_day01_01", puede cambiarlo configurando el nombre del
+                            skybox en el
+                            cuadro de diálogo Propiedades del mapa de Hammer. Con el mapa correcto abierto, siga estos
+                            pasos:</p>
+                        <ul>
+                            <li>Ir al menú Mapa</li>
+                            <li>Elija Propiedades del mapa ... de la lista desplegable</li>
+                            <li>En la ventana Propiedades del objeto, seleccione el campo Nombre de textura de Skybox.
+                            </li>
+                            <li>Reemplace el cielo que aparece allí con el nombre del palco que desea mostrar.</li>
+                        </ul>
+                        <div class="skyboxsection__imagen">
+                            <img class="skyboxsection__imagen--propiedades" src="../img/Sky_change.png" alt="skycamera">
+                        </div>
+                    </section>
+                    <aside class="col-lg-3">
+                        <div>
+                            <a class="iluminacion" title="Anubis" href="../tutoriales/iluminacion.html"><img
+                                    src="../img/Iluminacion.jpg" alt="" /></a>
+                        </div>
+                        <div>
+                            <a class="imgAnubis" title="Anubis" href="../tutoriales/cubemaps.html"><img
+                                    src="../img/cubemap.jpg" alt="" /></a>
+                        </div>
+                    </aside>
+                </div>
             </main>
             <footer class="footer">
 
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="social">
-    
+
                     <ul>
                         <li><a class="fa fa-twitter" href="https://twitter.com/VaIenQpr" target="_blank"></a>
                         </li>
-                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a></li>
+                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a>
+                        </li>
                         <li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCcgPYu81IYTeMXhVc1WTuaw"
                                 target="_blank"></a></li>
                         <li><a class="fa fa-github" href="https://github.com/ValenQpr" target="_blank"></a></li>
                     </ul>
                 </div>
-    
+
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="col-lg-8 offset-lg-2 p-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 footer__contenido">
                     <h3 class="footer__titulo">Hammer Editor</h3>
                     <p>Foro creado para la comunidad y obtener ayuda y discusión sobre la creacion de mapas de
@@ -158,7 +209,7 @@
                                     </svg><span>Youtube</span></a>
                             </li>
                             <li>
-    
+
                                 <a href="https://github.com/ValenQpr" target="_blank"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-github" viewBox="0 0 16 16">

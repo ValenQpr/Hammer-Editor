@@ -76,7 +76,7 @@ section {
   }
 
   /*============================= LISTA BASICA ===========================*/
-  
+
   &__lista {
     display: flex;
     flex-direction: column;
@@ -379,6 +379,9 @@ section {
 /*============================= SECTION SDK ===========================*/
 
 .mainsdk {
+  img {
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
+  }
   &__h2SDK {
     display: grid;
     justify-content: center;
@@ -417,22 +420,81 @@ section {
 }
 /*============================= SECTION SKYBOX ===========================*/
 
-.skyboxsection{
-  &__imagen{
-      border: 2px solid black;
-      text-align: center;
+.skyboxsection {
+  img {
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
   }
-  &__title{
+  h3 {
+    text-align: center;
+  }
+  .CENTRATE {
+    display: flex;
+    justify-content: center;
+  }
+  &__imagen {
+    display: flex;
+    justify-content: center;
+    &--brush {
       display: flex;
-      justify-content: center;
-      &--subtitle{
-      flex-flow: wrap;
-      }
-  }
+      flex-direction: row;
 
+      border: 2px solid black;
+      width: 90%;
+    }
+    &--brush1 {
+      width: 45%;
+    }
+    &--brush2 {
+      width: 55%;
+    }
+    img {
+      display: flex;
+      border: 2px solid black;
+      object-fit: cover;
+      box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
+    }
+    &--texturas {
+      width: 90%;
+    }
+    &--propiedades {
+      width: 90%;
+    }
+  }
 }
 
+/*============================= SECTION COMPILACION ===========================*/
 
+.sectionCompilacion {
+  .resultado {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    p {
+      padding-top: 6px;
+      margin-left: 10px;
+    }
+  }
+  h3 {
+    text-align: center;
+  }
+  &__imagen {
+    text-align: center;
+    img {
+      border: 2px solid black;
+      object-fit: cover;
+      box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
+    }
+    &--guardar {
+      width: 60%;
+    }
+    &--configurar {
+      width: 60%;
+    }
+    &--final {
+      width: 95%;
+    }
+  }
+}
 
 /*============================= MEDIA QUERIES ===========================*/
 
@@ -469,6 +531,27 @@ section {
   }
 }
 @include mobile3 {
+  .mainsdk {
+    img {
+      width: 90%;
+      object-fit: cover;
+    }
+  }
+
+  .sectionCompilacion {
+    &__imagen {
+      &--guardar {
+        width: 90%;
+      }
+      &--configurar {
+        width: 90%;
+      }
+      &--final {
+        width: 95%;
+      }
+    }
+  }
+
   .guias {
     &__basico {
       align-items: center;

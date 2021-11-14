@@ -63,7 +63,7 @@
             </header>
             <main>
                 <div class="row overflow-hidden">
-                    <section class="col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+                    <section class="sectionCompilacion col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
                         <h3 class="h2SDK">Compilacion</h3>
                         <p>
                             La etapa final para crear un nivel es guardarlo y compilarlo .
@@ -81,7 +81,9 @@
                         </p>
                         <p>
                             Haga clic en el menú "Archivo" y elija "Guardar" o "Guardar como ...": <p>
-                                <img src="../img/Hammer_saveas.jpg" alt="">
+                                <div class="sectionCompilacion__imagen">
+                                <img class="sectionCompilacion__imagen--guardar" src="../img/Hammer_saveas.jpg" alt="">
+                            </div>
                                 <p>
                                     Elija Guardar como ... para guardar el mapa.
                                     Consejo: Puedes presionar Ctrl + S para guardar el mapa con su nombre existente sin
@@ -103,9 +105,10 @@
                                 Tip.png Propina: También puede presionar F9.
                                 El cuadro de diálogo que aparece se utiliza para configurar una compilación:
                             </p>
-                            <div class="compilacion__final">
-                                <img class="compilacion__final--img" src="../img/Hammer_setmapparam.png" alt="">
+                            <div class="sectionCompilacion__imagen">
+                                <img class="sectionCompilacion__imagen--configurar" src="../img/Hammer_setmapparam.png" alt="">
                             </div>
+                            <br>
                             <p>
                                 Asegúrese de que "Normal" esté configurado en las configuraciones "Ejecutar BSP",
                                 "Ejecutar VIS" y "Ejecutar RAD".
@@ -126,8 +129,12 @@
                                 cargar. En su lugar, inicie desde Steam. Abra la consola del desarrollador y escriba map
                                 <your map, without file extension>para cargar el mapa manualmente.
                             </p>
-                            <h3 class="h2SDK">El resultado</h3>
-                            <img src="../img/resultadocompilacion.jpg" alt="">
+                            <div class="resultado">
+                            <h3 class="h2SDK">El resultado</h3> <p>(Con iluminacion)</p>
+                        </div>
+                            <div class="sectionCompilacion__imagen">
+                            <img class="sectionCompilacion__imagen--final" src="../img/resultadocompilacion.jpg" alt="">
+                        </div>
                     </section>
                     <aside class="col-lg-3">
                         <div>
@@ -144,21 +151,22 @@
             <footer class="footer">
 
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="social">
-    
+
                     <ul>
                         <li><a class="fa fa-twitter" href="https://twitter.com/VaIenQpr" target="_blank"></a>
                         </li>
-                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a></li>
+                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a>
+                        </li>
                         <li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCcgPYu81IYTeMXhVc1WTuaw"
                                 target="_blank"></a></li>
                         <li><a class="fa fa-github" href="https://github.com/ValenQpr" target="_blank"></a></li>
                     </ul>
                 </div>
-    
+
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="col-lg-8 offset-lg-2 p-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 footer__contenido">
                     <h3 class="footer__titulo">Hammer Editor</h3>
                     <p>Foro creado para la comunidad y obtener ayuda y discusión sobre la creacion de mapas de
@@ -195,7 +203,7 @@
                                     </svg><span>Youtube</span></a>
                             </li>
                             <li>
-    
+
                                 <a href="https://github.com/ValenQpr" target="_blank"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-github" viewBox="0 0 16 16">
