@@ -496,6 +496,34 @@ section {
   }
 }
 
+/*============================= SECTION LIGHT ===========================*/
+
+.sectionLight {
+  
+  h3 {
+    text-align: center;
+  }
+
+  
+   &__ejemplo {
+     text-align: center;
+     img {
+       width: 90%;
+       border: 2px solid black;
+       object-fit: cover;
+       box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
+     }
+   }
+  &__light {
+    display: flex;
+    flex-direction: row;
+    img {
+      float: left;
+      object-fit: cover;
+    }
+  }
+}
+
 /*============================= MEDIA QUERIES ===========================*/
 
 @include tablet {
