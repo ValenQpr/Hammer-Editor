@@ -1,16 +1,21 @@
 .skyboxsection3D {
-    &__imagen {
-        width: 577px;
-        height: 316px;
+  &__imagen {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 90%;
+      border: 2px solid black;
+      box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.596);
     }
+  }
 
-    &__title {
-        display: flex;
-        justify-content: center;
+  &__title {
+    display: flex;
+    justify-content: center;
 
-        &--subtitle {
-            flex-flow: wrap;
-        } 
+    &--subtitle {
+      flex-flow: wrap;
     }
-
+  }
 }

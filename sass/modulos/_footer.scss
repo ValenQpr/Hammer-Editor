@@ -1,75 +1,73 @@
-@import 'mediaqueries';
+@import "mediaqueries";
 
 /*===================================================== FOOTER =========================================================
 ========================================================================================================================*/
 .footer {
-    color: white;
-    justify-self: center;
-    border-top: 2px solid black;
-    width: 100%;
-    background: rgba(36, 36, 58, 0.959);
-    padding: 10px;
+  color: white;
+  justify-self: center;
+  border-top: 2px solid black;
+  width: 100%;
+  background: rgba(36, 36, 58, 0.959);
+  padding: 10px;
 
-    &__titulo {
-        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
-    }
+  &__titulo {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.61);
+  }
 
-    &__redes {
-        ul {
-            display: flex;
-            flex-direction: row;
-            justify-content: left;
-            list-style: none;
-            width: 100%;
-            padding: 0;
-            gap: 10px;
+  &__redes {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      gap: 10px;
 
-            li {
-                border-radius: 3px;
-                border: 1px solid white;
-                transition: 1.5s;
+      li {
+        border-radius: 3px;
+        border: 1px solid white;
+        transition: 1.5s;
 
-                &:hover {
-                    background: white;
-                    color: black;
-transform: rotatey(360deg);
-                    a {
-                        color: black;
-                    }
-                }
-
-                a {
-                    display: flex;
-                    align-items: center;
-                    text-decoration: none;
-                    color: white;
-                    padding: 0.4rem;
-                    transition: 0.3s;
-
-                    span {
-                        margin-left: 0.5rem;
-                    }
-                }
-            }
+        &:hover {
+          background: white;
+          color: black;
+          transform: rotatey(360deg);
+          a {
+            color: black;
+          }
         }
-    }
 
-    @include boostrap {
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: white;
+          padding: 0.4rem;
+          transition: 0.3s;
 
-        &>* {
-            margin-left: 1rem;
-            margin-right: 1rem;
+          span {
+            margin-left: 0.5rem;
+          }
         }
+      }
     }
+  }
 
-    @include mobile3 {
-        display: flex;
-        justify-content: center;
-
-        ul {
-            display: flex;
-            flex-flow: wrap;
-        }
+  @include boostrap {
+    & > * {
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
+  }
 
+  @include mobile3 {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      display: flex;
+      flex-flow: wrap;
+    }
+  }
 }

@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hammer Editor/Displacements</title>
+    <title>Hammer Editor/Cubemaps</title>
     <meta name="keywords" content="hammer, editor, csgo, Counter, Strike, SDK, mapas, skybox">
-    <meta name="description" content="Seccion completa de los displacements">
+    <meta name="description" content="Seccion completa de los cubemaps">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
-    <div class="containter-fluid tutoriales">
-        <div class="row overflow-hidden">
+    <div class="containter-fluid">
+        <div class="row overflow-hidden tutoriales">
             <header class="header col-lg-8 offset-lg-2 p-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
                 <div class="titulo">
                     <h1>Hammer Editor</h1>
@@ -63,39 +66,110 @@
             </header>
             <main>
                 <div class="row overflow-hidden">
-                <section class="col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
-                    <h3 class="h2SDK">Displacements</h3>
-                </section>
-                <aside class="col-lg-3">
-                    <div>
-                        <a class="iluminacion" title="Anubis" href="../tutoriales/iluminacion.html"><img
-                                src="../img/Iluminacion.jpg" alt="" /></a>
-                    </div>
-                    <div>
-                        <a class="imgAnubis" title="Anubis" href="../tutoriales/cubemaps.html"><img
-                                src="../img/cubemap.jpg" alt="" /></a>
-                    </div>
-                </aside>
-            </div>
+                    <section class="sectionEntidades col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+                        <h3 class="sectionEntidades__Titulo">Entidades</h3>
+                        <hr>
+                        <h5 class="sectionEntidades__subtitulo">Creacion de entidades</h5>
+                        <div class="sectionEntidades__light">
+                            <p><img class="sectionEntidades__entity " src="../img/Mt-entities.png" alt="">
+                                Las entidades son los monstruos, puertas, interruptores y luces que convierten su
+                                arquitectura estática en un entorno interactivo. La selección disponible depende del
+                                juego para el que está mapeando.
+                            </p>
+                        </div>
+                        Esta herramienta le permite colocar entidades basadas en puntos en un mapa. Las entidades
+                        basadas en puntos son aquellas entidades que existen solo en un punto y no dependen de un
+                        pincel para su efecto.
+                        Una vez que se selecciona la herramienta Entidad , la barra de herramientas Nuevo objeto
+                        contendrá una lista de entidades entre las que elegir. Seleccione una entidad de la lista,
+                        luego haga clic en una de las vistas 2D y presione Enter para colocar la entidad. Al hacer
+                        clic en un objeto de pincel en la vista 3D, se colocará inmediatamente la entidad en la
+                        superficie del pincel en la ubicación en la que se hizo clic.</p>
+                        <p>La colocación de entidades puntuales es simple:</p>
+                        <ol>
+                            <li>Seleccione la herramienta Entidad o presione <strong>Mayús + E</strong>.</li>
+                            <li>Selecciona todo lo que quieras para formar la entidad.</li>
+                            <li>Seleccione "Tie to Entity en el menú Herramientas o presione el botón <strong> Ctrl +
+                                    T</strong>. Esto convertirá los objetos seleccionados en una entidad basada en
+                                pincel.</li>
+                            <li>En el cuadro de diálogo Propiedades del objeto, seleccione la entidad adecuada del
+                                cuadro de lista "Class". Una vez que se selecciona el tipo de entidad, puede modificar
+                                las propiedades de la entidad según sea necesario.</li>
+                        </ol>
+                        <div class="sectionEntidades__ejemplos">
+                            <img class="sectionEntidades__ejemplos--ejemplo1" src="../img/Hammer_newentity.png" alt="">
+                            <img class="sectionEntidades__ejemplos--ejemplo2" src="../img/Hammer_objectproperties1.png"
+                                alt="">
+                        </div>
+                    </section>
+                    <aside class="col-lg-3">
+                        <div>
+                            <div class="imagen">
+                                <a title="Cache" href="./3Dskybox.html"><img src="../img/fondo3Dskybox.jpg"
+                                        alt="Cache" /></a>
+                                <a href="./3Dskybox.html">
+                                    <h3>3D Skybox</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="imagen">
+                                <a title="Skybox" href="./skybox.html"><img src="../img/fondoSDK.jpg"
+                                        alt="Skybox" /></a>
+                                <a href="./skybox.html">
+                                    <h3>Skybox</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="imagen">
+                                <a title="Santorini" href="./iluminacion.html"><img src="../img/IluminacionFondo.jpg"
+                                        alt="Santorini" /></a>
+                                <a href="./iluminacion.html">
+                                    <h3>Iluminacion</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="imagen">
+                                <a title="Cache" href="./props.html"><img src="../img/fondoProps.jpg" alt="Cache" /></a>
+                                <a href="./props.html">
+                                    <h3>Props</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="imagen">
+                                <a title="Optimizacion" href="./optimizacion.html"><img
+                                        src="../img/fondoOptimizacion.jpg" alt="Optimizacion" /></a>
+                                <a href="./optimizacion.html">
+                                    <h3>Optimizacion</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                    </nav>
             </main>
             <footer class="footer">
 
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="social">
-    
+
                     <ul>
                         <li><a class="fa fa-twitter" href="https://twitter.com/VaIenQpr" target="_blank"></a>
                         </li>
-                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a></li>
+                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a>
+                        </li>
                         <li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCcgPYu81IYTeMXhVc1WTuaw"
                                 target="_blank"></a></li>
                         <li><a class="fa fa-github" href="https://github.com/ValenQpr" target="_blank"></a></li>
                     </ul>
                 </div>
-    
+
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="col-lg-8 offset-lg-2 p-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 footer__contenido">
                     <h3 class="footer__titulo">Hammer Editor</h3>
                     <p>Foro creado para la comunidad y obtener ayuda y discusión sobre la creacion de mapas de
@@ -132,7 +206,7 @@
                                     </svg><span>Youtube</span></a>
                             </li>
                             <li>
-    
+
                                 <a href="https://github.com/ValenQpr" target="_blank"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-github" viewBox="0 0 16 16">

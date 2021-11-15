@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hammer Editor/Cubemaps</title>
     <meta name="keywords" content="hammer, editor, csgo, Counter, Strike, SDK, mapas, skybox">
-    <meta name="description" content="Seccion completa de los cubemaps">
+    <meta name="description" content="Seccion completa del 3Dskybox">
+    <title>Hammer Editor/3DSkybox</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
-    <div class="containter-fluid">
-        <div class="row overflow-hidden tutoriales">
+    <div class="containter-fluid tutoriales">
+        <div class="row overflow-hidden ">
             <header class="header col-lg-8 offset-lg-2 p-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
                 <div class="titulo">
                     <h1>Hammer Editor</h1>
@@ -62,40 +65,167 @@
                 </nav>
             </header>
             <main>
-                <div class="row overflow-hidden">
-                <section class="col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
-                    <h3 class="h2SDK">Env_Cubemaps</h3>
-                </section>
-                <aside class="col-lg-3">
-                    <div>
-                        <a class="iluminacion" title="Anubis" href="../tutoriales/iluminacion.html"><img
-                                src="../img/Iluminacion.jpg" alt="" /></a>
-                    </div>
-                    <div>
-                        <a class="imgAnubis" title="Anubis" href="../tutoriales/cubemaps.html"><img
-                                src="../img/cubemap.jpg" alt="" /></a>
-                    </div>
-                </aside>
-            </nav>
+                <div class=" row overflow-hidden">
+                    <section class="col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+                        <div class="sectionProps">
+
+
+                            <h3 class="sectionProps__titulo">Props</h3>
+                            <p class="sectionProps__contenido">Los props son archivos de geometría creados en un
+                                programa de
+                                modelado como <a href="https://www.blender.org/" target="_blank"><strong>
+                                        Blender</strong></a>. Puede colocar estos modelos en los mapas, como agregar
+                                accesorios a un escenario de película.</p>
+                            <hr>
+                            <h5>Prop_Static</h5>
+                            <p>prop_static una entidad disponible en todos los juegos Source. Se utiliza para agregar un
+                                modelo al mapa de forma económica. No se puede mover, animar ni aceptar entradas y no
+                                existe
+                                como entidad después de que se haya compilado el mapa. La gran mayoría de los modelos en
+                                un
+                                mapa típico son. <strong> prop_static</strong>
+                                Un preop podra colisionar con otros objetos suponiendo que tiene una malla de colisión,
+                                y, a
+                                diferencia de todas las demás entidades del modelo, puede ser iluminado por vértice y
+                                sombras proyectadas sobre lightmaps.</p>
+                            <hr>
+                            <h5>Agregar props al mapa</h5>
+                            <ol>
+                                <li>Comenzaremos agregando un Prop.
+                                    Todos los accesorios son entidades y se manejan como tales, así que cambie a la
+                                    Herramienta
+                                    de entidades.</li>
+                                <li> Luego, elija <strong> prop_static</strong> de la lista de entidades en la barra de
+                                    herramientas de objetos.
+                                    Coloque <strong> prop_static</strong> en el mapa haciendo click en el pincel del
+                                    suelo
+                                    en la
+                                    vista 3D.</li>
+                                <li> El resultado es una pequeña <strong>caja roja.</strong> Eso es porque aún no hemos
+                                    decidido
+                                    cómo se verá el accesorio.
+                                    Tendremos que elegir un modelo para este prop para hacer eso.</li>
+                            </ol>
+                            <div class="CENTRATE">
+                                <div class="sectionProps__imagen--pasos">
+                                    <img class="sectionProps__imagen--paso1" src="../img/Hammer_pickpropstatic.png"
+                                        alt="">
+                                    <img class="sectionProps__imagen--paso2" src="../img/Hammer_placepropstatic.png"
+                                        alt="">
+                                </div>
+                            </div>
+                            <br>
+                            <p> Cambie a la <strong> Herramienta de selección</strong> y haga doble clic en <strong>
+                                    prop_static</strong> para que aparezcan sus
+                                propiedades.</p>
+                            <ol>
+                                <li> Haga click en la opcion <strong>World model</strong> en el cuadro de diálogo
+                                    Propiedades del objeto.
+                                </li>
+                                <li>Haga click en el botón <strong> Browse...</strong> y espere pacientemente mientras
+                                    se
+                                    completa la lista
+                                    del Explorador de modelos. (Solo tendrá que esperar una vez; después de eso, la
+                                    lista
+                                    se almacenará en caché para futuras búsquedas).</li>
+                            </ol>
+                            <div class="sectionProps__imagen">
+                                <img class="sectionProps__imagen--browser1" src="../img/Hammer_pickworldmodel.png"
+                                    alt="">
+                            </div>
+                            <br>
+                            <p>Hay muchos modelos en esta carpeta, así que en lugar de desplazarnos por la lista
+                                completa, podemos simplemente filtrar el contenido como lo hicimos con el navegador de
+                                texturas, escribiendo “ fence” en el cuadro de texto justo debajo de la lista.</p>
+                            <div class="sectionProps__imagen">
+                                <img class="sectionProps__imagen--browser2"
+                                    src="../img/Hammer_ModelBrowser_PickFence.jpg" alt="">
+                            </div>
+                            <br>
+                            <p> Haga clic en el archivo de modelo que se encuentre para seleccionarlo.
+                                Se mostrará una vista previa del modelo en la ventana. Puede arrastrar
+                                el mouse en esa ventana para rotar libremente el modelo.
+                                Cuando haya terminado de inspeccionar la vista previa, confirme su elección de modelo
+                                haciendo click en <strong>Ok</strong>.
+                                Se cerrará el Explorador de modelos y se seleccionará el modelo fence01a como modelo
+                                para la entidad prop_static.</p>
+                            Haga click en el botón <strong> Apply</strong> para confirmar sus cambios.
+                            El <strong> prop_static</strong> ahora cambiará para mostrar el modelo de cerca que
+                            seleccionó en la vista 3D.
+                            También puede cambiar la dirección de la valla cambiando la configuración de inclinación y
+                            balanceo o usando el círculo angular y escribiendo un valor entre 0 y 360.</p>
+                        </div>
+                    </section>
+                    <aside class="col-lg-3">
+                        <div class="tituloAsideIndex">
+                            <div>
+                                <div class="imagen">
+                                    <a title="Optimizacion" href="./optimizacion.html"><img
+                                            src="../img/fondoOptimizacion.jpg" alt="Optimizacion" /></a>
+                                    <a href="./optimizacion.html">
+                                        <h3>Optimizacion</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagen">
+                                    <a title="Cache" href="./3Dskybox.html"><img src="../img/fondo3Dskybox.jpg"
+                                            alt="Cache" /></a>
+                                    <a href="./3Dskybox.html">
+                                        <h3>3D Skybox</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagen">
+                                    <a title="Skybox" href="./skybox.html"><img src="../img/fondoSDK.jpg"
+                                            alt="Skybox" /></a>
+                                    <a href="./skybox.html">
+                                        <h3>Skybox</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagen">
+                                    <a title="Santorini" href="./iluminacion.html"><img
+                                            src="../img/IluminacionFondo.jpg" alt="Santorini" /></a>
+                                    <a href="./iluminacion.html">
+                                        <h3>Iluminacion</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagen">
+                                    <a title="Cache" href="./compilacion.html"><img src="../img/fondoCompilacion.jpg"
+                                            alt="Cache" /></a>
+                                    <a href="./compilacion.html">
+                                        <h3>Compilacion</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </main>
             <footer class="footer">
 
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="social">
-    
+
                     <ul>
                         <li><a class="fa fa-twitter" href="https://twitter.com/VaIenQpr" target="_blank"></a>
                         </li>
-                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a></li>
+                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a>
+                        </li>
                         <li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCcgPYu81IYTeMXhVc1WTuaw"
                                 target="_blank"></a></li>
                         <li><a class="fa fa-github" href="https://github.com/ValenQpr" target="_blank"></a></li>
                     </ul>
                 </div>
-    
+
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="col-lg-8 offset-lg-2 p-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 footer__contenido">
                     <h3 class="footer__titulo">Hammer Editor</h3>
                     <p>Foro creado para la comunidad y obtener ayuda y discusión sobre la creacion de mapas de
@@ -132,7 +262,7 @@
                                     </svg><span>Youtube</span></a>
                             </li>
                             <li>
-    
+
                                 <a href="https://github.com/ValenQpr" target="_blank"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-github" viewBox="0 0 16 16">

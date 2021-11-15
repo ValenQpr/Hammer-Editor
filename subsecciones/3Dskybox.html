@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
@@ -63,103 +66,160 @@
             </header>
             <main>
                 <div class="row overflow-hidden">
-                <section class="skyboxsection3D col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
-                    <h3 class="skyboxsection3D__title">3D Skybox</h3>
-                    <p class="skyboxsection3D__info"> Agregar un skybox 3D puede ser una poderosa adición al tratamiento
-                        visual de
-                        un nivel. El skybox 3D es un área adicional construida por el diseñador de niveles que está
-                        fuera de los
-                        límites de la parte de juego del mapa. Cuando se carga el mapa, Source agranda los objetos en el
-                        área
-                        del skybox 3D y los coloca fuera de los límites del nivel actual, entre el skybox y el jugador.
-                        Esto se
-                        usa para dar la apariencia de un mundo mucho más amplio fuera de su nivel, sin ser demasiado
-                        caro para
-                        el presupuesto debido a la escala 1:16 (predeterminada). Los skyboxes 3D no son interactivos: el
-                        jugador
-                        y otras entidades no pueden moverse al espacio del skybox 3D.</p>
+                    <section class="skyboxsection3D col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+                        <h3 class="skyboxsection3D__title">3D Skybox</h3>
+                        <p class="skyboxsection3D__info"> Agregar un skybox 3D puede ser una poderosa adición al
+                            tratamiento
+                            visual de
+                            un nivel. El skybox 3D es un área adicional construida por el diseñador de niveles que está
+                            fuera de los
+                            límites de la parte de juego del mapa. Cuando se carga el mapa, Source agranda los objetos
+                            en el
+                            área
+                            del skybox 3D y los coloca fuera de los límites del nivel actual, entre el skybox y el
+                            jugador.
+                            Esto se
+                            usa para dar la apariencia de un mundo mucho más amplio fuera de su nivel, sin ser demasiado
+                            caro para
+                            el presupuesto debido a la escala 1:16 (predeterminada). Los skyboxes 3D no son
+                            interactivos: el
+                            jugador
+                            y otras entidades no pueden moverse al espacio del skybox 3D.</p>
 
-                    <p class="skyboxsection3D__info">La geometría del skybox 3D puede ser indistinguible de la geometría
-                        de nivel
-                        normal. Las transiciones fluidas desde la geometría de nivel normal y el skybox 3D son muy
-                        posibles, y
-                        se utilizan en muchos de los mapas para juegos oficiales de Source, como Counter-Strike: Source.
-                    </p>
-                    <img class="skyboxsection3D__imagen" src="../img/skycamera.png" alt="skycamera">
-                    <h3 class="skyboxsection3D__title skyboxsection3D__title--subtitle"> Los Skyboxes 3D tienen las
-                        siguientes características:</h3>
+                        <p class="skyboxsection3D__info">La geometría del skybox 3D puede ser indistinguible de la
+                            geometría
+                            de nivel
+                            normal. Las transiciones fluidas desde la geometría de nivel normal y el skybox 3D son muy
+                            posibles, y
+                            se utilizan en muchos de los mapas para juegos oficiales de Source, como Counter-Strike:
+                            Source.
+                        </p>
+                        <div class="skyboxsection3D__imagen">
+                            <img src="../img/skycamera.png" alt="skycamera">
+                        </div>
+                        <h3 class="skyboxsection3D__title skyboxsection3D__title--subtitle"> Los Skyboxes 3D tienen las
+                            siguientes características:</h3>
 
-                    <ul>
-                        <li> Se construyen (por defecto) en escala 1/16 en el editor de Hammer y luego se renderizan a
-                            16 veces el
-                            tamaño en el motor para que coincida con la geometría del mundo.</li>
-                        <li> Materiales de soporte con efectos de sombreado como mapeo normal, agua, mapeo del entorno,
-                            proxies, etc.
-                            No son interactivos: los jugadores y otras entidades del mundo no pueden ingresar a los
-                            palcos en 3D. El
-                            skybox 3D es solo una extensión visual de la extensión del mapa.</li>
-                        <li> Puede construirse con pinceles, desplazamientos, accesorios estáticos y dinámicos, luces,
-                            entidades de
-                            pincel y entidades puntuales (como env_sprite ).</li>
-                        <li>Cualquier modelo que se coloque en el skybox 3D debe ser creado a escala 1/16. Los modelos
-                            estándar (
-                            accesorios ) no se escalan correctamente para el skybox 3D. Deben utilizarse versiones
-                            especiales a
-                            escala 1/16. Para Half-Life 2 , estos accesorios se pueden encontrar en el
-                            models/props_skyboxdirectorio.</li>
-                        <li>No debe contener info_player_start , NPC o monstruos.</li>
-                        <li>Tienen un mapa de luz y una resolución de textura más bajos debido a la escala a la que se
-                            crean.</li>
-                        <li>Debe tener sus propias fuentes de iluminación, aunque también se utilizará un entorno de luz
-                            en la
-                            sección que no es del skybox para la iluminación del skybox en 3D.</li>
-                        <li>Utilice la entidad sky_camera para controlar cómo se alinean con la geometría del mundo que
-                            no es
-                            skybox.</li>
-                        <li> Los skyboxes 3D tienen sus propios parámetros de niebla, ajustables en la entidad
-                            sky_camera .</li>
-                        <li>La geometría en el skybox 3D no se ocluye ni se elimina como el resto de la geometría del
-                            nivel. Agregar
-                            muchos modelos o geometría de pincel detallados al skybox 3D, especialmente con materiales
-                            translúcidos,
-                            puede afectar gravemente al rendimiento.</li>
-                        <li>Un mapa debe tener un light_environment, de lo contrario, los modelos en el skybox 3D se
-                            iluminarán
-                            incorrectamente. Un light_environmenten la parte del mapa que no es skybox niega la
-                            necesidad de uno en
-                            el skybox 3D.</li>
-                    </ul>
-                </section>
-                <aside class="col-lg-3">
-                    <div>
-                        <a class="iluminacion" title="Anubis" href="../tutoriales/iluminacion.html"><img
-                                src="../img/Iluminacion.jpg" alt="" /></a>
-                    </div>
-                    <div>
-                        <a class="imgAnubis" title="Anubis" href="../tutoriales/cubemaps.html"><img
-                                src="../img/cubemap.jpg" alt="" /></a>
-                    </div>
-                </aside>
-            </div>
+                        <ul>
+                            <li> Se construyen (por defecto) en escala 1/16 en el editor de Hammer y luego se renderizan
+                                a
+                                16 veces el
+                                tamaño en el motor para que coincida con la geometría del mundo.</li>
+                            <li> Materiales de soporte con efectos de sombreado como mapeo normal, agua, mapeo del
+                                entorno,
+                                proxies, etc.
+                                No son interactivos: los jugadores y otras entidades del mundo no pueden ingresar a los
+                                palcos en 3D. El
+                                skybox 3D es solo una extensión visual de la extensión del mapa.</li>
+                            <li> Puede construirse con pinceles, desplazamientos, accesorios estáticos y dinámicos,
+                                luces,
+                                entidades de
+                                pincel y entidades puntuales (como env_sprite ).</li>
+                            <li>Cualquier modelo que se coloque en el skybox 3D debe ser creado a escala 1/16. Los
+                                modelos
+                                estándar (
+                                accesorios ) no se escalan correctamente para el skybox 3D. Deben utilizarse versiones
+                                especiales a
+                                escala 1/16. Para Half-Life 2 , estos accesorios se pueden encontrar en el
+                                models/props_skyboxdirectorio.</li>
+                            <li>No debe contener info_player_start , NPC o monstruos.</li>
+                            <li>Tienen un mapa de luz y una resolución de textura más bajos debido a la escala a la que
+                                se
+                                crean.</li>
+                            <li>Debe tener sus propias fuentes de iluminación, aunque también se utilizará un entorno de
+                                luz
+                                en la
+                                sección que no es del skybox para la iluminación del skybox en 3D.</li>
+                            <li>Utilice la entidad sky_camera para controlar cómo se alinean con la geometría del mundo
+                                que
+                                no es
+                                skybox.</li>
+                            <li> Los skyboxes 3D tienen sus propios parámetros de niebla, ajustables en la entidad
+                                sky_camera .</li>
+                            <li>La geometría en el skybox 3D no se ocluye ni se elimina como el resto de la geometría
+                                del
+                                nivel. Agregar
+                                muchos modelos o geometría de pincel detallados al skybox 3D, especialmente con
+                                materiales
+                                translúcidos,
+                                puede afectar gravemente al rendimiento.</li>
+                            <li>Un mapa debe tener un light_environment, de lo contrario, los modelos en el skybox 3D se
+                                iluminarán
+                                incorrectamente. Un light_environmenten la parte del mapa que no es skybox niega la
+                                necesidad de uno en
+                                el skybox 3D.</li>
+                        </ul>
+                    </section>
+                    <aside class="col-lg-3">
+                        <div class="tituloAsideIndex">
+                            <div>
+                                <div class="imagen">
+                                    <a title="Optimizacion" href="./optimizacion.html"><img
+                                            src="../img/fondoOptimizacion.jpg" alt="Optimizacion" /></a>
+                                    <a href="./optimizacion.html">
+                                        <h3>Optimizacion</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagen">
+                                    <a title="Skybox" href="./skybox.html"><img src="../img/fondoSDK.jpg"
+                                            alt="Skybox" /></a>
+                                    <a href="./skybox.html">
+                                        <h3>Skybox</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagen">
+                                    <a title="Santorini" href="./iluminacion.html"><img
+                                            src="../img/IluminacionFondo.jpg" alt="Santorini" /></a>
+                                    <a href="./iluminacion.html">
+                                        <h3>Iluminacion</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagen">
+                                    <a title="Cache" href="./props.html"><img src="../img/fondoProps.jpg"
+                                            alt="Cache" /></a>
+                                    <a href="./props.html">
+                                        <h3>Props</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagen">
+                                    <a title="Cache" href="./compilacion.html"><img src="../img/fondoCompilacion.jpg"
+                                            alt="Cache" /></a>
+                                    <a href="./compilacion.html">
+                                        <h3>Compilacion</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </main>
             <footer class="footer">
 
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="social">
-    
+
                     <ul>
                         <li><a class="fa fa-twitter" href="https://twitter.com/VaIenQpr" target="_blank"></a>
                         </li>
-                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a></li>
+                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a>
+                        </li>
                         <li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCcgPYu81IYTeMXhVc1WTuaw"
                                 target="_blank"></a></li>
                         <li><a class="fa fa-github" href="https://github.com/ValenQpr" target="_blank"></a></li>
                     </ul>
                 </div>
-    
+
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="col-lg-8 offset-lg-2 p-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 footer__contenido">
                     <h3 class="footer__titulo">Hammer Editor</h3>
                     <p>Foro creado para la comunidad y obtener ayuda y discusión sobre la creacion de mapas de
@@ -196,7 +256,7 @@
                                     </svg><span>Youtube</span></a>
                             </li>
                             <li>
-    
+
                                 <a href="https://github.com/ValenQpr" target="_blank"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-github" viewBox="0 0 16 16">

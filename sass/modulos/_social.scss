@@ -1,4 +1,3 @@
-
 @each $var, $color in $social {
   .social {
     position: fixed;
@@ -32,8 +31,7 @@
     }
   }
 }
-
-@include boostrap {
+@include tablet {
   .social {
     display: none;
   }

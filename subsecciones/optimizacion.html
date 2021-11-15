@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
@@ -64,16 +67,85 @@
             <main>
                 <div class="row overflow-hidden">
                     <section class="col-lg-5 offset-lg-2 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
-                        <h3 class="h2SDK">Optimizacion</h3>
+                        <h3 class="sectionOptimizacion__titulo">Optimizacion</h3>
+                        <hr>
+                        <h5 class="sectionOptimizacion__subtitulo">La textura "Hint"</h5>
+                        <div class="sectionOptimizacion__explicacion">
+                            <p><img class="sectionOptimizacion__textura" src="../img/toolshint.jpg" alt="">
+                                La textura <strong>Hint</strong> se utiliza para dividir la vision del mapa durante el
+                                tiempo de compilación y, como tal, son una forma de optimizar los resultados de la etapa
+                                de <a href="./compilacion.html"><strong>compilación</strong></a> del mapa.
+                                <br>
+                                Se denomina comúnmente <strong>Hint Brush</strong>, ya que se colocan en un mapa de la
+                                misma forma que un pincel de mundo normal.
+                                <br>
+                                El <strong>Hint</strong> se define por el
+                                lado del pincel que está cubierto con la textura.
+                                Se pueden definir varios planos de
+                                sugerencia texturizando varios lados del pincel o utilizando varios pinceles. Los otros
+                                lados del pincel que no actúan como planos de sugerencia deben cubrirse con la textura;
+                                El compilador ignorará estas caras. <strong> tools/toolshinttools/toolsskip</strong>
+                                Las sugerencias se vinculan automáticamente a su propio grupo de visualización
+                                automático , por lo que puede ocultarlas fácilmente.
+                            </p>
+                        </div>
+                        <hr>
+                        <h5 class="sectionOptimizacion__subtitulo">La textura "Skip"</h5>
+                        <div class="sectionOptimizacion__explicacion">
+                            <p><img class="sectionOptimizacion__textura" src="../img/toolsskip.jpg" alt="">
+                                <strong>Skip</strong> es una herramienta de textura que le dice al compilador (VBSP)
+                                que omita el procesamiento de la cara del pincel que está texturizada con él (todavía
+                                existe dentro del mapa aunque el motor lo ignora en tiempo de ejecución).
+                                <br>
+                                Las texturas de <strong>Skip</strong> se aplican a las superficies en <a
+                                    href="./skybox.html"><Strong>Brush</Strong></a> con texturas <strong>Hint</strong>
+                                que no
+                                deben usarse para romper visleafs (u hojas en resumen). Por lo general, un pincel
+                                utilizado para insinuar tiene una textura de sugerencia en una o dos superficies y salta
+                                texturas en el resto.
+                                <br>
+                                Omitir texturas no hace más que hacer que las herramientas omitan
+                                los lados del pincel a los que se aplican; deben esta propiedad al parámetro %
+                                compileskip .VMT.
+                                <br>
+                                Envolver un grupo de objetos colocados con precisión, dentro de un pincel normal a la
+                                par con un tamaño de cuadrícula más grande, y luego seleccionar estos componentes junto
+                                con el pincel, ayudará a preservar las posiciones de cuadrícula exactas de los
+                                componentes cuando el grupo se mueva de acuerdo con el tamaño de cuadrícula de el
+                                cepillo envolvente. Como este pincel es simplemente una herramienta para la fase de
+                                diseño, cubrir el pincel envolvente con texturas <strong>Ski[</strong> evitará que este
+                                pincel se
+                                procese en el mapa. (Para obtener instrucciones detalladas, consulte el artículo
+                                prefabricado ).
+                            </p>
+                        </div>
                     </section>
                     <aside class="col-lg-3">
                         <div>
-                            <a class="iluminacion" title="Anubis" href="../tutoriales/iluminacion.html"><img
-                                    src="../img/Iluminacion.jpg" alt="" /></a>
+                            <div class="imagen">
+                                <a title="Cache" href="./3Dskybox.html"><img src="../img/fondo3Dskybox.jpg"
+                                        alt="Cache" /></a>
+                                <a href="./3Dskybox.html">
+                                    <h3>3D Skybox</h3>
+                                </a>
+                            </div>
                         </div>
                         <div>
-                            <a class="imgAnubis" title="Anubis" href="../tutoriales/cubemaps.html"><img
-                                    src="../img/cubemap.jpg" alt="" /></a>
+                            <div class="imagen">
+                                <a title="Skybox" href="./skybox.html"><img src="../img/fondoSDK.jpg"
+                                        alt="Skybox" /></a>
+                                <a href="./skybox.html">
+                                    <h3>Skybox</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="imagen">
+                                <a title="Cache" href="./props.html"><img src="../img/fondoProps.jpg" alt="Cache" /></a>
+                                <a href="./props.html">
+                                    <h3>Props</h3>
+                                </a>
+                            </div>
                         </div>
                     </aside>
                 </div>
@@ -81,21 +153,22 @@
             <footer class="footer">
 
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="social">
-    
+
                     <ul>
                         <li><a class="fa fa-twitter" href="https://twitter.com/VaIenQpr" target="_blank"></a>
                         </li>
-                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a></li>
+                        <li><a class="fa fa-steam" href="https://steamcommunity.com/id/ValenQpr/" target="_blank"></a>
+                        </li>
                         <li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCcgPYu81IYTeMXhVc1WTuaw"
                                 target="_blank"></a></li>
                         <li><a class="fa fa-github" href="https://github.com/ValenQpr" target="_blank"></a></li>
                     </ul>
                 </div>
-    
+
                 <!-- trabajando en la barra social -->
-    
+
                 <div class="col-lg-8 offset-lg-2 p-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 footer__contenido">
                     <h3 class="footer__titulo">Hammer Editor</h3>
                     <p>Foro creado para la comunidad y obtener ayuda y discusión sobre la creacion de mapas de
@@ -132,7 +205,7 @@
                                     </svg><span>Youtube</span></a>
                             </li>
                             <li>
-    
+
                                 <a href="https://github.com/ValenQpr" target="_blank"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-github" viewBox="0 0 16 16">
